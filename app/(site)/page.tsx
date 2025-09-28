@@ -22,9 +22,11 @@ export default function HomePage() {
   const videos = getVideos();
   const gallery = getGallery();
   const latestRelease = releases[0];
+  const playlistThumb = "https://i.ytimg.com/vi/XPjH28VEdrw/maxresdefault.jpg" as const;
+
   const featuredPlaylistRelease: Release = {
     title: "The Conference Playlist",
-    cover: "/images/releases/conference-playlist.svg",
+    cover: playlistThumb,
     spotifyUrl: fallbackSpotify,
     youtubeUrl: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
     appleUrl: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
@@ -34,7 +36,7 @@ export default function HomePage() {
   const heroFeaturedVideo = {
     title: "The Conference Playlist",
     url: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
-    thumb: "/images/releases/conference-playlist.svg",
+    thumb: playlistThumb,
   } as const;
   const igPosts = gallery.slice(0, 9).map((photo) => ({
     thumb: photo.src,
