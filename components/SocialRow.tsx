@@ -15,7 +15,7 @@ const SOCIAL_LINKS = [
   },
   {
     label: "YouTube",
-    href: "https://www.youtube.com/@deyanmusic",
+    href: "https://www.youtube.com/@realdeyan",
     icon: Youtube,
     platform: "youtube" as const,
   },

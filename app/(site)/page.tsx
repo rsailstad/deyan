@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const fallbackSpotify = "https://open.spotify.com/track/3VvwExampleRISING";
-const fallbackYoutube = "https://www.youtube.com/channel/UC9pKHytr-MTuGzbSrB-W73g";
+const fallbackYoutube = "https://www.youtube.com/@realdeyan";
 
 export default function HomePage() {
   const releases = getReleases();
