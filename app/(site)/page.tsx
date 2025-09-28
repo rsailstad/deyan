@@ -14,25 +14,25 @@ export const metadata: Metadata = {
     "Tap into Deyan's world: stream the latest single, binge the new videos, and follow the neon trail across socials.",
 };
 
-const fallbackSpotify = "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56?si=agpuCXr5TWCeZYtE6yQ0HQ";
 
 export default function HomePage() {
   const releases = getReleases();
   const videos = getVideos();
   const gallery = getGallery();
   const latestRelease = releases[0];
-  const playlistThumb = "https://i.ytimg.com/vi/XPjH28VEdrw/maxresdefault.jpg" as const;
   const heroPlaylistThumb = "/images/hero/herothumb.png" as const;
 
-  const featuredPlaylistRelease: Release = {
-    title: "The Conference Playlist",
-    cover: playlistThumb,
-    spotifyUrl: fallbackSpotify,
-    youtubeUrl: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
-    appleUrl: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
-    releaseDate: latestRelease?.releaseDate ?? "2025-09-19",
-    tags: ["playlist"],
-  } as const;
+  const jaguarRelease: Release | null = videos[0]
+    ? {
+        title: "JAGUAR (Official Video)",
+        cover: videos[0].thumb,
+        spotifyUrl: "https://open.spotify.com/track/3VvwExampleRISING",
+        youtubeUrl: `https://youtu.be/${videos[0].youtubeId}`,
+        appleUrl: "https://music.apple.com/album/rising-single/1234567890",
+        releaseDate: videos[0].date,
+        tags: ["video"],
+      }
+    : null;
   const heroFeaturedVideo = {
     title: "The Conference Playlist",
     url: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
@@ -40,7 +40,7 @@ export default function HomePage() {
   } as const;
   const igPosts = gallery.slice(0, 9).map((photo) => ({
     thumb: photo.src,
-    url: photo.url ?? "https://www.instagram.com/deyan",
+    url: photo.url ?? "https://www.instagram.com/realdeyan/",
     alt: photo.alt,
   }));
 
@@ -86,10 +86,10 @@ export default function HomePage() {
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] xl:grid-cols-[1.2fr_0.8fr]">
           <VideoHighlight videos={videos} />
           <div className="flex flex-col gap-6">
-            {featuredPlaylistRelease ? (
+            {jaguarRelease ? (
               <ReleaseCard
-                release={featuredPlaylistRelease}
-                singleCta={{ label: "Play Playlist", href: featuredPlaylistRelease.youtubeUrl, platform: "youtube" }}
+                release={jaguarRelease}
+                singleCta={{ label: "Watch Jaguar", href: jaguarRelease.youtubeUrl, platform: "youtube" }}
               />
             ) : latestRelease ? (
               <ReleaseCard release={latestRelease} />
@@ -106,17 +106,14 @@ export default function HomePage() {
               <h2 className="mt-2 text-3xl font-semibold text-fg md:text-4xl">
                 Swipe the latest captures
               </h2>
-              <p className="mt-3 max-w-xl text-sm text-fg-muted">
-                Highlight reel from rehearsals, release nights, and life between tour stops. Tap any tile to open the post in Instagram.
-              </p>
             </div>
             <a
-              href="https://www.instagram.com/deyan"
+              href="https://www.instagram.com/realdeyan/"
               target="_blank"
               rel="noreferrer"
               className="text-sm font-semibold text-[var(--accent-green)]"
             >
-              Follow @deyan
+              Follow @realdeyan
             </a>
           </div>
           <IgGrid posts={igPosts} className="mt-10" />

@@ -21,7 +21,7 @@ const SOCIAL_LINKS = [
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/deyan",
+    href: "https://www.instagram.com/realdeyan/",
     icon: Instagram,
     platform: "instagram" as const,
   },

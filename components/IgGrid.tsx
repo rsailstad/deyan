@@ -66,12 +66,12 @@ export function IgGrid({ posts, className, context = "ig-grid" }: IgGridProps) {
         )}
       >
         <div className="glass-panel flex items-center justify-between rounded-full border border-white/10 bg-black/70 px-5 py-4 shadow-[var(--shadow-soft)]">
-          <p className="text-sm font-semibold text-fg">Follow Deyan on Instagram</p>
+          <p className="text-sm font-semibold text-fg">Follow @realdeyan on Instagram</p>
           <Button
             size="sm"
             className="rounded-full bg-[var(--accent-green)] px-4 text-xs font-bold uppercase tracking-[0.3em] text-black"
             onClick={() => {
-              const href = withUtm("https://www.instagram.com/deyan", { platform: "instagram", context: "ig-sticky" });
+              const href = withUtm("https://www.instagram.com/realdeyan/", { platform: "instagram", context: "ig-sticky" });
               trackOutbound("instagram_click", href, { platform: "instagram", context: "ig-sticky" });
               window.open(href, "_blank", "noreferrer");
             }}
