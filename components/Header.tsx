@@ -34,10 +34,11 @@ export function Header() {
         <Link
           href="/"
           className="flex items-center gap-2 text-lg font-semibold tracking-[0.4em]"
-          aria-label="realDEYAN home"
+          aria-label="Deyan home"
         >
-          <span className="text-sm uppercase text-fg-muted">real</span>
-          <span className="text-gradient text-2xl font-black tracking-[0.45em]">DEYAN</span>
+          <span className="text-gradient text-2xl font-black uppercase tracking-[0.55em] drop-shadow-[0_0_18px_rgba(181,255,63,0.35)]">
+            D<span className="text-white">EYAN</span>
+          </span>
         </Link>
 
         <div className="hidden items-center gap-6 md:flex">
@@ -78,8 +79,9 @@ export function Header() {
                 onClick={() => setOpen(false)}
                 className="text-lg font-semibold tracking-[0.35em]"
               >
-                <span className="text-xs uppercase text-fg-muted">real</span>
-                <span className="ml-2 text-gradient text-2xl font-black tracking-[0.45em]">DEYAN</span>
+                <span className="text-gradient text-2xl font-black uppercase tracking-[0.55em] drop-shadow-[0_0_18px_rgba(181,255,63,0.35)]">
+                  D<span className="text-white">EYAN</span>
+                </span>
               </Link>
               <Nav orientation="vertical" onNavigate={() => setOpen(false)} />
               <Button

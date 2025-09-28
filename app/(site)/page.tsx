@@ -10,7 +10,7 @@ import { formatDate } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Tap into realDEYAN's world: stream the latest single, binge the new videos, and follow the neon trail across socials.",
+    "Tap into Deyan's world: stream the latest single, binge the new videos, and follow the neon trail across socials.",
 };
 
 const fallbackSpotify = "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56?si=agpuCXr5TWCeZYtE6yQ0HQ";
@@ -34,9 +34,9 @@ export default function HomePage() {
       }
     : null;
   const heroFeaturedVideo = {
-    title: "Jaguar – Live Session Clip",
-    url: "https://www.youtube.com/watch?v=-s28Ad21Rkw",
-    thumb: "https://i.ytimg.com/vi/-s28Ad21Rkw/maxresdefault.jpg",
+    title: "The Conference Playlist",
+    url: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
+    thumb: "https://i.ytimg.com/vi/XPjH28VEdrw/maxresdefault.jpg",
   } as const;
   const igPosts = gallery.slice(0, 9).map((photo) => ({
     thumb: photo.src,

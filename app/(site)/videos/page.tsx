@@ -5,7 +5,7 @@ import { getVideos } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Videos",
-  description: "Queue the visuals. Watch realDEYAN's latest drops and live moments, autoplay ready.",
+  description: "Queue the visuals. Watch Deyan's latest drops and live moments, autoplay ready.",
 };
 
 export default function VideosPage() {

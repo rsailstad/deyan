@@ -19,18 +19,18 @@ const inter = Inter({
 });
 
 const siteUrl = "https://deyan.world";
-const siteTitle = "realDEYAN - Official Site";
-const description = "Discover realDEYAN, the 15-year-old rapper blending electric hyperpop energy with razor-sharp storytelling. Stream the latest tracks, watch new videos, and stay in the loop.";
+const siteTitle = "Deyan - Official Site";
+const description = "Discover Deyan, the 15-year-old rapper blending electric hyperpop energy with razor-sharp storytelling. Stream the latest tracks, watch new videos, and stay in the loop.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: siteTitle,
-    template: "%s | realDEYAN",
+    template: "%s | Deyan",
   },
   description,
   keywords: [
-    "realDEYAN",
+    "Deyan",
     "rapper",
     "hyperpop",
     "music",
@@ -42,14 +42,14 @@ export const metadata: Metadata = {
     title: siteTitle,
     description,
     url: siteUrl,
-    siteName: "realDEYAN",
+    siteName: "Deyan",
     type: "website",
     images: [
       {
         url: "/og/default.svg",
         width: 1200,
         height: 630,
-        alt: "realDEYAN artist hero image",
+        alt: "Deyan artist hero image",
       },
     ],
   },

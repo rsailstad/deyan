@@ -6,7 +6,7 @@ import { getReleases } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Music",
-  description: "Dive into realDEYAN's singles and EPs. One tap to stream on Spotify, Apple Music, or YouTube.",
+  description: "Dive into Deyan's singles and EPs. One tap to stream on Spotify, Apple Music, or YouTube.",
 };
 
 export default function MusicPage() {

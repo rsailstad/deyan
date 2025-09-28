@@ -66,7 +66,7 @@ export function IgGrid({ posts, className, context = "ig-grid" }: IgGridProps) {
         )}
       >
         <div className="glass-panel flex items-center justify-between rounded-full border border-white/10 bg-black/70 px-5 py-4 shadow-[var(--shadow-soft)]">
-          <p className="text-sm font-semibold text-fg">Follow realDEYAN on Instagram</p>
+          <p className="text-sm font-semibold text-fg">Follow Deyan on Instagram</p>
           <Button
             size="sm"
             className="rounded-full bg-[var(--accent-green)] px-4 text-xs font-bold uppercase tracking-[0.3em] text-black"

@@ -1,6 +1,6 @@
-# realDEYAN Artist Website
+# Deyan Artist Website
 
-A mobile-first, content-driven artist hub for **realDEYAN**, designed to push Spotify plays, YouTube views, and Instagram discovery through integrated UX flows. Built with Next.js 14 App Router, Tailwind CSS (v4), shadcn/ui, and TypeScript.
+A mobile-first, content-driven artist hub for **Deyan**, designed to push Spotify plays, YouTube views, and Instagram discovery through integrated UX flows. Built with Next.js 14 App Router, Tailwind CSS (v4), shadcn/ui, and TypeScript.
 
 ## ✨ Features
 - Hero with parallax motion, actionable CTAs, and latest release/video callouts.

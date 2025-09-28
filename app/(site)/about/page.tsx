@@ -8,7 +8,7 @@ import { formatDate } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Meet realDEYAN: bio, highlights, and press-ready assets in one scroll.",
+  description: "Meet Deyan: bio, highlights, and press-ready assets in one scroll.",
 };
 
 export default function AboutPage() {

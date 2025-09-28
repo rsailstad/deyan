@@ -5,7 +5,7 @@ import { SocialRow } from "@/components/SocialRow";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Booking, press, and management inbox for realDEYAN.",
+  description: "Booking, press, and management inbox for Deyan.",
 };
 
 export default function ContactPage() {

@@ -21,7 +21,7 @@
     <path d="M640 0 L960 1080" />
     <path d="M1120 0 L1440 1080" />
   </g>
-  <text x="12%" y="74%" font-family="'Space Grotesk', sans-serif" font-size="220" font-weight="800" fill="rgba(181,255,63,0.15)">
-    realDEYAN
+  <text x="12%" y="74%" font-family="'Space Grotesk', sans-serif" font-size="240" font-weight="800" fill="rgba(181,255,63,0.18)">
+    DEYAN
   </text>
 </svg>

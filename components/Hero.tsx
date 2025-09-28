@@ -57,7 +57,7 @@ export function Hero({
       <div className="absolute inset-0">
         <Image
           src={bg}
-          alt="realDEYAN hero background"
+          alt="Deyan hero background"
           fill
           priority
           className="object-cover"
@@ -136,7 +136,7 @@ export function Hero({
                   </div>
                 </Link>
                 <div className="space-y-1 text-fg">
-                  <p className="text-xs uppercase tracking-[0.35em] text-fg-muted">Featured Visual</p>
+                  <p className="text-xs uppercase tracking-[0.35em] text-fg-muted">Featured Playlist</p>
                   {featuredVideo.date ? (
                     <p className="text-xs text-fg-muted/80">{featuredVideo.date}</p>
                   ) : null}
@@ -186,7 +186,7 @@ export function Hero({
                 </div>
               </Link>
               <div className="mt-3 space-y-1 text-sm text-fg">
-                <p className="text-xs uppercase tracking-[0.35em] text-fg-muted">Featured Visual</p>
+                <p className="text-xs uppercase tracking-[0.35em] text-fg-muted">Featured Playlist</p>
                 {featuredVideo.date ? (
                   <p className="text-xs text-fg-muted/80">{featuredVideo.date}</p>
                 ) : null}
