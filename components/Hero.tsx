@@ -137,7 +137,6 @@ export function Hero({
                 </Link>
                 <div className="space-y-1 text-fg">
                   <p className="text-xs uppercase tracking-[0.35em] text-fg-muted">Featured Visual</p>
-                  <p className="text-base font-semibold text-fg">{featuredVideo.title}</p>
                   {featuredVideo.date ? (
                     <p className="text-xs text-fg-muted/80">{featuredVideo.date}</p>
                   ) : null}
@@ -188,7 +187,6 @@ export function Hero({
               </Link>
               <div className="mt-3 space-y-1 text-sm text-fg">
                 <p className="text-xs uppercase tracking-[0.35em] text-fg-muted">Featured Visual</p>
-                <p className="text-base font-semibold text-fg">{featuredVideo.title}</p>
                 {featuredVideo.date ? (
                   <p className="text-xs text-fg-muted/80">{featuredVideo.date}</p>
                 ) : null}
