@@ -53,7 +53,7 @@ export function Hero({
   }, []);
 
   return (
-    <section className="relative mt-16 h-[85vh] min-h-[560px] overflow-hidden sm:mt-0">
+    <section className="relative mt-28 h-[85vh] min-h-[560px] overflow-hidden sm:mt-0">
       <div className="absolute inset-0">
         <Image
           src={bg}
@@ -68,7 +68,7 @@ export function Hero({
       </div>
       <div
         className={cn(
-          "relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-4 pb-32 pt-24 sm:px-6 lg:pb-40",
+          "relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-4 pb-32 pt-36 sm:px-6 sm:pt-24 lg:pb-40",
           "parallax-wrap",
         )}
         style={{

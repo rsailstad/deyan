@@ -30,7 +30,7 @@ export function Header() {
         "bg-[rgba(11,11,12,0.72)] border-b border-white/5",
       )}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6 md:h-16">
         <Link
           href="/"
           className="flex items-center gap-2 text-lg font-semibold tracking-[0.4em]"
