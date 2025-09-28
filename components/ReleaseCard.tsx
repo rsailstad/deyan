@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { trackOutbound, withUtm } from "@/lib/analytics";
+import type { OutboundMeta } from "@/lib/analytics";
 import { formatDate } from "@/lib/utils";
 
 export type Release = {
@@ -25,7 +26,7 @@ interface ReleaseCardProps {
   singleCta?: {
     label: string;
     href: string;
-    platform?: string;
+    platform?: OutboundMeta["platform"];
   };
 }
 

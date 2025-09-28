@@ -45,23 +45,15 @@ export function IgGrid({ posts, className, context = "ig-grid" }: IgGridProps) {
             className="group overflow-hidden rounded-3xl border border-white/10"
           >
             <div className="relative h-40 w-full sm:h-48">
-              {post.thumb.startsWith("http") ? (
-                <img
-                  src={post.thumb}
-                  alt={post.alt}
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-              ) : (
-                <Image
-                  src={post.thumb}
-                  alt={post.alt}
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                  loading="lazy"
-                />
-              )}
+              <Image
+                src={post.thumb}
+                alt={post.alt}
+                fill
+                className="object-cover transition duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 50vw, 33vw"
+                loading="lazy"
+                unoptimized={post.thumb.startsWith("http")}
+              />
             </div>
           </button>
         ))}
