@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const SOCIAL_LINKS = [
   {
     label: "Spotify",
-    href: "https://open.spotify.com/artist/5examplerealDEYAN",
+    href: "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56?si=agpuCXr5TWCeZYtE6yQ0HQ",
     icon: Music2,
     platform: "spotify" as const,
   },

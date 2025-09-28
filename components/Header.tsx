@@ -10,7 +10,7 @@ import { Nav } from "@/components/Nav";
 import { trackOutbound, withUtm } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
-const spotifyUrl = "https://open.spotify.com/artist/5examplerealDEYAN";
+const spotifyUrl = "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56?si=agpuCXr5TWCeZYtE6yQ0HQ";
 
 export function Header() {
   const [open, setOpen] = useState(false);

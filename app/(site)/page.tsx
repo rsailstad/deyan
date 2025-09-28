@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Tap into realDEYAN's world: stream the latest single, binge the new videos, and follow the neon trail across socials.",
 };
 
-const fallbackSpotify = "https://open.spotify.com/track/3VvwExampleRISING";
+const fallbackSpotify = "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56?si=agpuCXr5TWCeZYtE6yQ0HQ";
 const fallbackYoutube = "https://www.youtube.com/@realdeyan";
 
 export default function HomePage() {
