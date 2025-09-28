@@ -125,32 +125,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="glass-panel grid gap-8 rounded-[36px] border-white/10 bg-[#11111c]/80 p-8 md:grid-cols-2 md:p-12 xl:grid-cols-[1.1fr_0.9fr]">
-            <div>
-              <p className="text-xs uppercase tracking-[0.4em] text-fg-muted">Tour Teaser</p>
-              <h2 className="mt-3 text-3xl font-semibold text-fg md:text-4xl">
-                Book the Neon Pulse Live Experience
-              </h2>
-              <p className="mt-4 text-sm text-fg-muted">
-                Intimate club shows, festival slots, and school takeovers. Custom visuals, synced choreography, and a post-show meet & greet.
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <p className="text-sm text-fg-muted">
-                Reach out to management for routing, tech rider, and advance materials. Tour pre-sales open now for Fall 2025.
-              </p>
-              <a
-                href="mailto:booking@deyan.world"
-                className="inline-flex w-max items-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-fg hover:border-white/35"
-              >
-                booking@deyan.world
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
