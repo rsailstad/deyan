@@ -44,7 +44,7 @@ export default function HomePage() {
     alt: photo.alt,
   }));
 
-  const heroSpotify = "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf";
+  const heroSpotify = "https://open.spotify.com/album/0x5rXTicbgVz3EhgnHnaEN";
   const heroYoutube = "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf";
 
   const heroStats = [
