@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero";
 import { VideoHighlight } from "@/components/VideoHighlight";
 import { IgGrid } from "@/components/IgGrid";
 import { ReleaseCard } from "@/components/ReleaseCard";
+import type { Release } from "@/components/ReleaseCard";
 import { getGallery, getReleases, getVideos } from "@/lib/content";
 import { formatDate } from "@/lib/utils";
 
@@ -21,22 +22,19 @@ export default function HomePage() {
   const videos = getVideos();
   const gallery = getGallery();
   const latestRelease = releases[0];
-  const latestVideo = videos[0];
-  const latestVideoRelease = latestVideo
-    ? {
-        title: latestVideo.title,
-        cover: latestVideo.thumb,
-        spotifyUrl: `https://www.youtube.com/watch?v=${latestVideo.youtubeId}`,
-        youtubeUrl: `https://www.youtube.com/watch?v=${latestVideo.youtubeId}`,
-        appleUrl: `https://www.youtube.com/watch?v=${latestVideo.youtubeId}`,
-        releaseDate: latestVideo.date,
-        tags: ["video"],
-      }
-    : null;
+  const featuredPlaylistRelease: Release = {
+    title: "The Conference Playlist",
+    cover: "/images/releases/conference-playlist.svg",
+    spotifyUrl: fallbackSpotify,
+    youtubeUrl: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
+    appleUrl: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
+    releaseDate: latestRelease?.releaseDate ?? "2025-09-19",
+    tags: ["playlist"],
+  } as const;
   const heroFeaturedVideo = {
     title: "The Conference Playlist",
     url: "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
-    thumb: "https://i.ytimg.com/vi/XPjH28VEdrw/maxresdefault.jpg",
+    thumb: "/images/releases/conference-playlist.svg",
   } as const;
   const igPosts = gallery.slice(0, 9).map((photo) => ({
     thumb: photo.src,
@@ -84,14 +82,14 @@ export default function HomePage() {
         featuredVideo={heroFeaturedVideo}
       />
 
-      <section className="relative z-10 mx-auto -mt-6 max-w-6xl px-4 pb-24 sm:-mt-8 sm:px-6 lg:-mt-12">
+      <section className="relative z-10 mx-auto mt-8 max-w-6xl px-4 pb-24 sm:-mt-8 sm:px-6 lg:-mt-12">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] xl:grid-cols-[1.2fr_0.8fr]">
           <VideoHighlight videos={videos} />
           <div className="flex flex-col gap-6">
-            {latestVideoRelease ? (
+            {featuredPlaylistRelease ? (
               <ReleaseCard
-                release={latestVideoRelease}
-                singleCta={{ label: "Watch Jaguar", href: latestVideoRelease.youtubeUrl, platform: "youtube" }}
+                release={featuredPlaylistRelease}
+                singleCta={{ label: "Play Playlist", href: featuredPlaylistRelease.youtubeUrl, platform: "youtube" }}
               />
             ) : latestRelease ? (
               <ReleaseCard release={latestRelease} />
