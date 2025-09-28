@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk, MedievalSharp } from "next/font/google";
 import "sonner/dist/styles.css";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
@@ -15,6 +15,13 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const medieval = MedievalSharp({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-medieval",
   display: "swap",
 });
 
@@ -79,6 +86,7 @@ export default function RootLayout({
           "min-h-screen bg-bg text-fg antialiased",
           spaceGrotesk.variable,
           inter.variable,
+          medieval.variable,
         )}
       >
         {children}

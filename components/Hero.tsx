@@ -53,7 +53,7 @@ export function Hero({
   }, []);
 
   return (
-    <section className="relative h-[85vh] min-h-[560px] overflow-hidden">
+    <section className="relative mt-16 h-[85vh] min-h-[560px] overflow-hidden sm:mt-0">
       <div className="absolute inset-0">
         <Image
           src={bg}
@@ -84,7 +84,7 @@ export function Hero({
                 <span>New album out now</span>
               </div>
               <h1 className="mt-6 text-balance text-5xl font-black tracking-tight text-fg sm:text-6xl md:text-7xl">
-                <span className="text-gradient block text-[clamp(3rem,6vw,5rem)] font-extrabold leading-tight">
+                <span className="block text-[clamp(3rem,6vw,5rem)] leading-tight text-gradient" style={{ fontFamily: "var(--font-medieval)" }}>
                   {title}
                 </span>
               </h1>
