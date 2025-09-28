@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="rg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#B5FF3F" />
+      <stop offset="50%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#0B0B0C" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="#0B0B0C" />
+  <circle cx="600" cy="600" r="520" fill="url(#rg)" opacity="0.9" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="150" font-family="'Space Grotesk', sans-serif" font-weight="700" fill="#0B0B0C" letter-spacing="0.25em">NEON</text>
+  <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" font-size="140" font-family="'Space Grotesk', sans-serif" font-weight="700" fill="#F5F7FA" letter-spacing="0.35em">TEEN</text>
+</svg>

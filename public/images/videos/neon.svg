@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="pulse" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#B5FF3F" />
+      <stop offset="40%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#0B0B0C" />
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#pulse)" />
+  <rect x="480" y="200" width="320" height="320" rx="40" fill="#0B0B0C" opacity="0.88" />
+  <polygon points="560,360 720,460 720,260" fill="#B5FF3F" />
+  <text x="640" y="640" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="92" font-weight="700" fill="#F5F7FA">NEON TEEN</text>
+</svg>

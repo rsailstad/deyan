@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0B0C" />
+      <stop offset="60%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#B5FF3F" />
+    </linearGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="soft-light" />
+    </filter>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#g)" />
+  <rect width="1200" height="1200" fill="#0B0B0C" opacity="0.2" filter="url(#noise)" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="160" font-family="'Space Grotesk', sans-serif" font-weight="700" fill="#F5F7FA" letter-spacing="0.3em">RISING</text>
+</svg>

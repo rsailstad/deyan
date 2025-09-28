@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --bg: #0b0b0c;
+  --bg-elevated: rgba(32, 34, 47, 0.65);
+  --bg-panel: rgba(37, 39, 58, 0.4);
+  --fg: #f5f7fa;
+  --fg-muted: #9ca3af;
+  --accent-violet: #7c3aed;
+  --accent-green: #b5ff3f;
+  --muted: rgba(156, 163, 175, 0.25);
+  --border: rgba(124, 58, 237, 0.22);
+  --ring: rgba(181, 255, 63, 0.4);
+  --shadow-soft: 0 24px 80px rgba(12, 12, 24, 0.55);
+  --glow-violet: 0 0 32px rgba(124, 58, 237, 0.6);
+  --radius: 28px;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-panel: var(--bg-panel);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-accent: var(--accent-violet);
+  --color-highlight: var(--accent-green);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 12px);
+}
+
+@layer base {
+  * {
+    @apply border-transparent outline-none focus-visible:outline-[3px] focus-visible:outline-offset-4 focus-visible:outline-[color:var(--ring)];
+  }
+
+  html {
+    @apply scroll-smooth bg-bg text-fg;
+  }
+
+  body {
+    @apply min-h-screen bg-gradient-to-b from-[#09090d] via-[#0b0b0c] to-[#09090d] text-fg font-[var(--font-inter)] antialiased;
+  }
+
+  ::selection {
+    background: rgba(124, 58, 237, 0.8);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply rounded-[var(--radius-lg)] border border-white/5 bg-[var(--color-bg-panel)] shadow-[var(--shadow-soft)] backdrop-blur-lg;
+  }
+
+  .text-gradient {
+    background-image: linear-gradient(120deg, rgba(181, 255, 63, 0.95), rgba(124, 58, 237, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .cta-shadow {
+    box-shadow: 0 20px 45px rgba(124, 58, 237, 0.45);
+  }
+
+  .grid-outline {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+.parallax-wrap {
+  --parallax-y: 0;
+  transform: translate3d(0, calc(var(--parallax-y) * 1px), 0);
+  transition: transform 160ms ease;
+}
+
+.fade-in {
+  animation: fadeInUp 700ms ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <radialGradient id="neon" cx="70%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#B5FF3F" />
+      <stop offset="55%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#0B0B0C" />
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#neon)" />
+  <rect x="180" y="360" width="720" height="540" rx="120" ry="120" fill="#0B0B0C" opacity="0.3" />
+  <text x="50%" y="86%" dominant-baseline="middle" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="72" letter-spacing="0.3em" fill="#F5F7FA" opacity="0.65">NIGHT</text>
+</svg>

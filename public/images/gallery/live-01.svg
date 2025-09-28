@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#0B0B0C" />
+  <path d="M0 900 C200 720, 400 720, 600 900 S1000 1080, 1200 840" fill="#7C3AED" opacity="0.4" />
+  <path d="M-100 870 C150 640, 360 620, 640 880 S1020 1150, 1300 960" fill="#B5FF3F" opacity="0.25" />
+  <circle cx="540" cy="400" r="160" fill="#F5F7FA" opacity="0.08" />
+  <text x="50%" y="90%" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="72" letter-spacing="0.18em" fill="#F5F7FA" opacity="0.7">PULSE</text>
+</svg>

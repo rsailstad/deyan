@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="stage" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B0B0C" />
+      <stop offset="100%" stop-color="#1E2335" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#stage)" />
+  <path d="M120 600 C240 480, 360 480, 480 600 S720 720, 960 580" fill="none" stroke="#B5FF3F" stroke-width="18" stroke-linecap="round" opacity="0.7" />
+  <circle cx="960" cy="280" r="160" fill="#7C3AED" opacity="0.7" />
+  <polygon points="620,360 820,480 820,240" fill="#F5F7FA" opacity="0.85" />
+  <text x="160" y="160" font-family="'Space Grotesk', sans-serif" font-size="92" font-weight="700" fill="#F5F7FA">CTRL + HEART (LIVE)</text>
+</svg>
