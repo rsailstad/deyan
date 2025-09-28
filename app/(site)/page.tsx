@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 };
 
 const fallbackSpotify = "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56?si=agpuCXr5TWCeZYtE6yQ0HQ";
-const fallbackYoutube = "https://www.youtube.com/@realdeyan";
 
 export default function HomePage() {
   const releases = getReleases();
@@ -45,10 +44,8 @@ export default function HomePage() {
     alt: photo.alt,
   }));
 
-  const heroSpotify = latestRelease?.spotifyUrl ?? fallbackSpotify;
-  const heroYoutube = videos[0]?.youtubeId
-    ? `https://youtu.be/${videos[0].youtubeId}`
-    : fallbackYoutube;
+  const heroSpotify = "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf";
+  const heroYoutube = "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf";
 
   const heroStats = [
     latestRelease
@@ -77,10 +74,10 @@ export default function HomePage() {
       <Hero
         bg="/images/hero/background.png"
         title={latestRelease?.title ?? "The Conference"}
-        subtitle={latestRelease ? `Released ${formatDate(latestRelease.releaseDate)}` : undefined}
+        subtitle="Tap to stream the full Conference playlist"
         spotifyUrl={heroSpotify}
         youtubeUrl={heroYoutube}
-        latestVideoTitle={videos[0]?.title}
+        latestVideoTitle={undefined}
         stats={heroStats}
         featuredVideo={heroFeaturedVideo}
       />
