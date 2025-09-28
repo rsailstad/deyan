@@ -17,13 +17,4 @@
     "releaseDate": "2025-06-13",
     "tags": ["single"]
   },
-  {
-    "title": "CTRL+HEART",
-    "cover": "/images/releases/ctrl-heart.svg",
-    "spotifyUrl": "https://open.spotify.com/album/1CtrlHeartEP",
-    "youtubeUrl": "https://youtube.com/playlist?list=PLexampleCTRL",
-    "appleUrl": "https://music.apple.com/album/ctrl-heart-ep/555555555",
-    "releaseDate": "2024-11-20",
-    "tags": ["ep", "hyperpop"]
-  }
 ]
