@@ -23,7 +23,7 @@ export default function HomePage() {
   const gallery = getGallery();
   const latestRelease = releases[0];
   const playlistThumb = "https://i.ytimg.com/vi/XPjH28VEdrw/maxresdefault.jpg" as const;
-  const heroPlaylistThumb = "/images/featured/conference-playlist.svg" as const;
+  const heroPlaylistThumb = "/images/hero/herothumb.png" as const;
 
   const featuredPlaylistRelease: Release = {
     title: "The Conference Playlist",
