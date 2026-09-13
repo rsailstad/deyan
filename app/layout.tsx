@@ -25,9 +25,9 @@ const medieval = MedievalSharp({
   display: "swap",
 });
 
-const siteUrl = "https://deyan.world";
-const siteTitle = "Deyan - Official Site";
-const description = "Discover Deyan, the 15-year-old rapper blending electric hyperpop energy with razor-sharp storytelling. Stream the latest tracks, watch new videos, and stay in the loop.";
+const siteUrl = "https://realdeyan.com";
+const siteTitle = "Deyan";
+const description = "Official website and audio archive for Bucharest-based hip-hop artist Deyan. Stream the Seven Seas You Should Swim (SSYSS) rollout, watch music videos, and listen to the discography.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -38,10 +38,11 @@ export const metadata: Metadata = {
   description,
   keywords: [
     "Deyan",
-    "rapper",
-    "hyperpop",
+    "hip-hop",
+    "underground",
     "music",
-    "teen artist",
+    "Bucharest",
+    "SSYSS",
     "spotify",
     "youtube",
   ],

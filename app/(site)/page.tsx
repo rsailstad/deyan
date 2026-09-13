@@ -3,7 +3,7 @@ import { InteractiveHome } from "@/components/InteractiveHome";
 import { getReleases, getVideos } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Deyan | Official Audio & Visual Archive",
+  title: "Deyan",
   description:
     "Official website and archive for Bucharest-based hip-hop artist Deyan. Stream 'Wave: 31st Sedative', 'Lemon Tree', and the Seven Seas You Should Swim rollout.",
 };

@@ -57,8 +57,8 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
               <span>SSYSS // SEVEN SEAS ARCHIVE</span>
             </div>
 
-            <h1 className="text-balance text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight text-white leading-none">
-              REAL<span className="text-gradient">DEYAN</span>
+            <h1 className="text-balance text-6xl sm:text-8xl lg:text-9xl font-black tracking-tight text-white leading-none">
+              <span className="text-gradient">DEYAN</span>
             </h1>
 
             <p className="mt-6 text-base sm:text-lg text-fg-muted max-w-xl leading-relaxed">
