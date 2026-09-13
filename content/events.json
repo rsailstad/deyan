@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ssyss-listening-experience",
+    "title": "SEVEN SEAS (SSYSS) // Live Listening Experience",
+    "status": "upcoming",
+    "date": "2026-11-14",
+    "time": "20:00 - 23:30 EEST",
+    "venue": {
+      "name": "Oclu Events",
+      "tagline": "Urban-Industrial Event Space",
+      "address": "Bulevardul Dimitrie Pompeiu 5-7, Sector 2",
+      "city": "Bucharest, Romania",
+      "postalCode": "020335",
+      "area": "Pipera Corporate District",
+      "metro": "Pipera Metro Station (M2 line) — 4 min walk",
+      "googleMapsUrl": "https://maps.google.com/?q=Oclu+Events+Bd.+Dimitrie+Pompeiu+5-7+Bucuresti",
+      "wazeUrl": "https://waze.com/ul?q=Oclu%20Events%20Bucharest"
+    },
+    "description": "An intimate, invitation & RSVP-first preview experience of Deyan's sophomore record 'Seven Seas You Should Swim' (SSYSS). Featuring self-produced playback stems, live visual projection mapping, and physical archive listening.",
+    "highlights": [
+      "Exclusive unreleased track listening from Seven Seas You Should Swim",
+      "Multi-channel audio playback and visual installations",
+      "Collaborator guest appearances & DJ set by stvtterz",
+      "Strict capacity limit: 120 guests"
+    ],
+    "admission": {
+      "type": "RSVP Required",
+      "price": "Free / Guestlist Access",
+      "ageNotice": "All Ages (Under-18 accompanied or verified RSVP)"
+    },
+    "rsvpEmail": "realdeyan@gmail.com",
+    "featured": true
+  }
+]

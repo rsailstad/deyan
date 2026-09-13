@@ -40,14 +40,16 @@ export function ContactForm() {
   });
 
   const onSubmit = async (values: ContactValues) => {
-    console.table(values);
     setLoading(true);
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    const subject = encodeURIComponent(`Inquiry from ${values.name}`);
+    const body = encodeURIComponent(
+      `Name: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
+    );
+    window.location.href = `mailto:realdeyan@gmail.com?subject=${subject}&body=${body}`;
     setLoading(false);
-    toast.success("Message queued", {
-      description: "We'll reply via management within 24 hours.",
+    toast.success("Opening email client...", {
+      description: "Directing to realdeyan@gmail.com",
     });
-    form.reset();
   };
 
   return (
@@ -106,16 +108,16 @@ export function ContactForm() {
       <div className="mt-6 rounded-3xl border border-white/10 bg-[#0b0b12]/70 p-4 text-sm text-fg-muted">
         Prefer email? {" "}
         <a
-          href="mailto:booking@deyan.world"
+          href="mailto:realdeyan@gmail.com"
           className="font-semibold text-[var(--accent-green)] hover:text-white"
           onClick={() =>
-            trackOutbound("email_click", "mailto:booking@deyan.world", {
+            trackOutbound("email_click", "mailto:realdeyan@gmail.com", {
               platform: "other",
               context: "contact-mailto",
             })
           }
         >
-          booking@deyan.world
+          realdeyan@gmail.com
         </a>
       </div>
     </Form>

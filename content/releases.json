@@ -1,20 +1,56 @@
 [
   {
-    "title": "The Conference",
+    "title": "Wave: 31st Sedative",
+    "cover": "https://i.ytimg.com/vi/am5f5fLTpLs/maxresdefault.jpg",
+    "spotifyUrl": "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56",
+    "youtubeUrl": "https://www.youtube.com/watch?v=am5f5fLTpLs",
+    "appleUrl": "https://music.apple.com/us/artist/deyan/1234567890",
+    "releaseDate": "2026-08-18",
+    "tags": ["single", "underground", "cinematic"]
+  },
+  {
+    "title": "Lemon Tree",
+    "cover": "https://i.scdn.co/image/ab67616d0000b2738bac069cdcd69bc0a842f491",
+    "spotifyUrl": "https://open.spotify.com/album/2a9VvSg5mLktBtPiN140O2",
+    "youtubeUrl": "https://www.youtube.com/@realdeyan/releases",
+    "appleUrl": "https://music.apple.com/us/artist/deyan/1234567890",
+    "releaseDate": "2026-05-15",
+    "tags": ["single", "lead"]
+  },
+  {
+    "title": "Jaguar",
     "cover": "https://i.ytimg.com/vi/XPjH28VEdrw/maxresdefault.jpg",
-    "spotifyUrl": "https://open.spotify.com/track/3VvwExampleRISING",
-    "youtubeUrl": "https://www.youtube.com/playlist?list=PLWe3iEB5Hvxqp-fvM3--0F4DaSz-l4qMf",
-    "appleUrl": "https://music.apple.com/album/rising-single/1234567890",
-    "releaseDate": "2025-09-19",
-    "tags": ["single", "anthem"]
+    "spotifyUrl": "https://open.spotify.com/album/0P8rmFRZXf5gqD1B3gcPIX",
+    "youtubeUrl": "https://www.youtube.com/watch?v=XPjH28VEdrw",
+    "appleUrl": "https://music.apple.com/album/jaguar/0P8rmFRZXf5gqD1B3gcPIX",
+    "releaseDate": "2025-08-27",
+    "tags": ["single", "video"]
+  },
+  {
+    "title": "The World Before My Eyes (Director's Cut)",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273b59fc15fbd3b259d0704cf43",
+    "spotifyUrl": "https://open.spotify.com/album/0oEfyZmJ1hdAj1BLXHVHfB",
+    "youtubeUrl": "https://www.youtube.com/@realdeyan/releases",
+    "appleUrl": "https://music.apple.com/album/the-world-before-my-eyes/0oEfyZmJ1hdAj1BLXHVHfB",
+    "releaseDate": "2025-11-20",
+    "tags": ["album", "remaster"]
   },
   {
     "title": "50/50 Life",
     "cover": "https://i.ytimg.com/vi/aBBZm2FJNqM/maxresdefault.jpg",
-    "spotifyUrl": "https://open.spotify.com/track/5050ExampleLife",
+    "spotifyUrl": "https://open.spotify.com/album/0oNLdEU8xMhLq6I7gFMXhH",
     "youtubeUrl": "https://www.youtube.com/watch?v=aBBZm2FJNqM",
-    "appleUrl": "https://music.apple.com/album/5050-life/0987654321",
-    "releaseDate": "2025-06-13",
+    "appleUrl": "https://music.apple.com/album/50-50-life/0oNLdEU8xMhLq6I7gFMXhH",
+    "releaseDate": "2025-03-15",
+    "tags": ["single", "video"]
+  },
+  {
+    "title": "Prophet",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273e3b11c27de85ccb0a7155e0f",
+    "spotifyUrl": "https://open.spotify.com/album/6GpedMdbQvByp6IlgiL25c",
+    "youtubeUrl": "https://www.youtube.com/@realdeyan/releases",
+    "appleUrl": "https://music.apple.com/album/prophet/6GpedMdbQvByp6IlgiL25c",
+    "releaseDate": "2025-01-20",
     "tags": ["single"]
   }
 ]

@@ -7,10 +7,12 @@ import { cn } from "@/lib/utils";
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Music", href: "/music" },
-  { label: "Lyrics", href: "/lyrics" },
   { label: "Videos", href: "/videos" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
+  // Kept routes but hidden from public nav:
+  // { label: "Events", href: "/events" },
+  // { label: "Lyrics", href: "/lyrics" },
 ] as const;
 
 type NavOrientation = "horizontal" | "vertical";
