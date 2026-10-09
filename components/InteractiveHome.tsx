@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -50,6 +50,11 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
   const [activeModalVideo, setActiveModalVideo] = useState<VideoItem | null>(null);
   const [emailInput, setEmailInput] = useState("");
   const [emailSent, setEmailSent] = useState(false);
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   const featuredVideo = videos[0];
 
@@ -515,7 +520,7 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
             SSYSS // Seven Seas You Should Swim // Bucharest
           </p>
           <p className="mt-6 text-xs text-white/20">
-            {new Date().getFullYear()} Deyan. All rights reserved. Self-produced in Bucharest.
+            {currentYear ?? 2026} Deyan. All rights reserved. Self-produced in Bucharest.
           </p>
         </div>
       </section>
