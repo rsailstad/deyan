@@ -48,10 +48,15 @@ export async function POST(request: Request) {
         return NextResponse.json({ success: true, status: res.status }, { status: 200 });
       }
 
-      // Non-redirect, non-OK response - log but still show success to user
+      // Non-redirect, non-OK response - return details so we can diagnose
       const text = await res.text();
-      console.error("Webhook returned non-standard status:", res.status, text.slice(0, 200));
-      return NextResponse.json({ success: true, warning: "non-standard status" }, { status: 200 });
+      console.error("Webhook returned non-standard status:", res.status, text.slice(0, 500));
+      return NextResponse.json({
+        success: false,
+        error: "Webhook rejected submission",
+        status: res.status,
+        preview: text.slice(0, 300)
+      }, { status: 502 });
     } catch (fetchError) {
       // fetch itself failed (network error, redirect loop, etc.)
       // The data may have still been received by Google Apps Script
