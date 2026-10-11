@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "Official website and archive for Bucharest-based hip-hop artist Deyan. Stream 'Wave: 31st Sedative', 'Lemon Tree', and the Seven Seas You Should Swim rollout.",
 };
 
+export const dynamic = "force-dynamic";
+
 export default function HomePage() {
   const releases = getReleases();
   const videos = getVideos();
