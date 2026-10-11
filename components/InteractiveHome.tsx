@@ -51,6 +51,7 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
   const [activeModalVideo, setActiveModalVideo] = useState<VideoItem | null>(null);
   const [emailInput, setEmailInput] = useState("");
   const [emailSent, setEmailSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [currentYear, setCurrentYear] = useState<number | null>(null);
 
   useEffect(() => {
@@ -63,14 +64,33 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
   const eventVenue = "Oclu Events";
   const eventCity = "Bucharest";
 
-  const handleEmailSubmit = (e: React.FormEvent) => {
+  const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (emailInput.trim()) {
-      // Open email client with prefilled subject and CC recipients
+    if (!emailInput.trim() || submitting) return;
+
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: emailInput.trim(), type: "newsletter" }),
+      });
+      if (res.ok) {
+        setEmailSent(true);
+      } else {
+        // Fallback to mailto if API fails
+        const subject = encodeURIComponent("Add me to the Deyan email list");
+        const body = encodeURIComponent(`Email: ${emailInput}\n\nAdd me to the list for exclusive drops, unreleased tracks, and event invites.`);
+        window.location.href = `mailto:${CONTACT_EMAIL}?cc=${encodeURIComponent(CC_EMAILS)}&subject=${subject}&body=${body}`;
+        setEmailSent(true);
+      }
+    } catch {
       const subject = encodeURIComponent("Add me to the Deyan email list");
       const body = encodeURIComponent(`Email: ${emailInput}\n\nAdd me to the list for exclusive drops, unreleased tracks, and event invites.`);
       window.location.href = `mailto:${CONTACT_EMAIL}?cc=${encodeURIComponent(CC_EMAILS)}&subject=${subject}&body=${body}`;
       setEmailSent(true);
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -185,7 +205,7 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
 
           {emailSent ? (
             <p className="text-sm text-[var(--accent-green)] font-semibold">
-              Your email client should have opened. Thanks for joining.
+              You&apos;re on the list. Watch your inbox for upcoming drops.
             </p>
           ) : (
             <form
@@ -198,13 +218,15 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
                 value={emailInput}
                 onChange={(e) => setEmailInput(e.target.value)}
                 placeholder="your@email.com"
-                className="flex-1 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm text-white placeholder:text-white/30 outline-none transition focus:border-[var(--accent-green)] focus:bg-white/10"
+                disabled={submitting}
+                className="flex-1 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm text-white placeholder:text-white/30 outline-none transition focus:border-[var(--accent-green)] focus:bg-white/10 disabled:opacity-50"
               />
               <button
                 type="submit"
-                className="rounded-full bg-white px-6 py-3 text-sm font-bold text-black transition hover:bg-white/90 active:scale-95"
+                disabled={submitting}
+                className="rounded-full bg-white px-6 py-3 text-sm font-bold text-black transition hover:bg-white/90 active:scale-95 disabled:opacity-50"
               >
-                Sign Up
+                {submitting ? "Joining..." : "Sign Up"}
               </button>
             </form>
           )}

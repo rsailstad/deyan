@@ -41,16 +41,42 @@ export function ContactForm() {
 
   const onSubmit = async (values: ContactValues) => {
     setLoading(true);
-    const cc = encodeURIComponent("rsailstad@gmail.com,ancasailstad@yahoo.com");
-    const subject = encodeURIComponent(`Inquiry from ${values.name}`);
-    const body = encodeURIComponent(
-      `Name: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
-    );
-    window.location.href = `mailto:realdeyan@gmail.com?cc=${cc}&subject=${subject}&body=${body}`;
-    setLoading(false);
-    toast.success("Opening email client...", {
-      description: "Directing to realdeyan@gmail.com",
-    });
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: values.email,
+          name: values.name,
+          message: values.message,
+          type: "contact",
+        }),
+      });
+
+      if (res.ok) {
+        toast.success("Message received", {
+          description: "We'll get back to you shortly.",
+        });
+        form.reset();
+      } else {
+        // Fallback to mailto
+        const cc = encodeURIComponent("rsailstad@gmail.com,ancasailstad@yahoo.com");
+        const subject = encodeURIComponent(`Inquiry from ${values.name}`);
+        const body = encodeURIComponent(
+          `Name: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
+        );
+        window.location.href = `mailto:realdeyan@gmail.com?cc=${cc}&subject=${subject}&body=${body}`;
+      }
+    } catch {
+      const cc = encodeURIComponent("rsailstad@gmail.com,ancasailstad@yahoo.com");
+      const subject = encodeURIComponent(`Inquiry from ${values.name}`);
+      const body = encodeURIComponent(
+        `Name: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
+      );
+      window.location.href = `mailto:realdeyan@gmail.com?cc=${cc}&subject=${subject}&body=${body}`;
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
