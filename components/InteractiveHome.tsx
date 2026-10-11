@@ -358,14 +358,15 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
             </Link>
           </div>
           <iframe
-            style={{ borderRadius: "16px" }}
+            style={{ borderRadius: "16px", minHeight: "352px" }}
             src="https://open.spotify.com/embed/artist/0m4xsZn25PBXtXokxXBT56?utm_source=generator&theme=0"
             width="100%"
             height="352"
             frameBorder="0"
             allowFullScreen
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
+            loading="eager"
+            scrolling="no"
             title="Deyan Spotify Streamer"
           />
         </div>
