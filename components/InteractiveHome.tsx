@@ -45,6 +45,7 @@ const YOUTUBE_URL = "https://www.youtube.com/@realdeyan";
 const INSTAGRAM_URL = "https://www.instagram.com/realdeyan/";
 const APPLE_URL = "https://music.apple.com/us/artist/deyan/1234567890";
 const CONTACT_EMAIL = "realdeyan@gmail.com";
+const CC_EMAILS = "rsailstad@gmail.com,ancasailstad@yahoo.com";
 
 export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
   const [activeModalVideo, setActiveModalVideo] = useState<VideoItem | null>(null);
@@ -65,10 +66,10 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (emailInput.trim()) {
-      // Open email client with prefilled subject
+      // Open email client with prefilled subject and CC recipients
       const subject = encodeURIComponent("Add me to the Deyan email list");
       const body = encodeURIComponent(`Email: ${emailInput}\n\nAdd me to the list for exclusive drops, unreleased tracks, and event invites.`);
-      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:${CONTACT_EMAIL}?cc=${encodeURIComponent(CC_EMAILS)}&subject=${subject}&body=${body}`;
       setEmailSent(true);
     }
   };

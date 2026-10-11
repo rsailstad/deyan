@@ -41,11 +41,12 @@ export function ContactForm() {
 
   const onSubmit = async (values: ContactValues) => {
     setLoading(true);
+    const cc = encodeURIComponent("rsailstad@gmail.com,ancasailstad@yahoo.com");
     const subject = encodeURIComponent(`Inquiry from ${values.name}`);
     const body = encodeURIComponent(
       `Name: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
     );
-    window.location.href = `mailto:realdeyan@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:realdeyan@gmail.com?cc=${cc}&subject=${subject}&body=${body}`;
     setLoading(false);
     toast.success("Opening email client...", {
       description: "Directing to realdeyan@gmail.com",
