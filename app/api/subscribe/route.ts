@@ -36,8 +36,11 @@ export async function POST(request: Request) {
 
     if (!res.ok) {
       const text = await res.text();
-      console.error("Webhook submission error:", text);
-      return NextResponse.json({ error: "Failed to forward submission" }, { status: 502 });
+      console.error("Webhook submission error:", res.status, text);
+      return NextResponse.json(
+        { error: "Failed to forward submission", status: res.status, detail: text.slice(0, 300) },
+        { status: 502 }
+      );
     }
 
     return NextResponse.json({ success: true }, { status: 200 });
