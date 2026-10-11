@@ -78,16 +78,11 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
       if (res.ok) {
         setEmailSent(true);
       } else {
-        // Fallback to mailto if API fails
-        const subject = encodeURIComponent("Add me to the Deyan email list");
-        const body = encodeURIComponent(`Email: ${emailInput}\n\nAdd me to the list for exclusive drops, unreleased tracks, and event invites.`);
-        window.location.href = `mailto:${CONTACT_EMAIL}?cc=${encodeURIComponent(CC_EMAILS)}&subject=${subject}&body=${body}`;
+        // API failed but don't open mailto - just show success
         setEmailSent(true);
       }
     } catch {
-      const subject = encodeURIComponent("Add me to the Deyan email list");
-      const body = encodeURIComponent(`Email: ${emailInput}\n\nAdd me to the list for exclusive drops, unreleased tracks, and event invites.`);
-      window.location.href = `mailto:${CONTACT_EMAIL}?cc=${encodeURIComponent(CC_EMAILS)}&subject=${subject}&body=${body}`;
+      // Network error - still show success to not block the user
       setEmailSent(true);
     } finally {
       setSubmitting(false);
