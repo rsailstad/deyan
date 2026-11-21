@@ -2,7 +2,7 @@
   {
     "id": "ssyss-listening-experience",
     "title": "SEVEN SEAS (SSYSS) // Live Listening Experience",
-    "status": "upcoming",
+    "status": "completed",
     "date": "2026-11-14",
     "time": "20:00 - 23:30 EEST",
     "venue": {
@@ -12,7 +12,7 @@
       "city": "Bucharest, Romania",
       "postalCode": "020335",
       "area": "Pipera Corporate District",
-      "metro": "Pipera Metro Station (M2 line) — 4 min walk",
+      "metro": "Pipera Metro Station (M2 line) \u2014 4 min walk",
       "googleMapsUrl": "https://maps.google.com/?q=Oclu+Events+Bd.+Dimitrie+Pompeiu+5-7+Bucuresti",
       "wazeUrl": "https://waze.com/ul?q=Oclu%20Events%20Bucharest"
     },
@@ -29,6 +29,7 @@
       "ageNotice": "All Ages (Under-18 accompanied or verified RSVP)"
     },
     "rsvpEmail": "realdeyan@gmail.com",
-    "featured": true
+    "featured": true,
+    "youtubeUrl": "https://youtu.be/uXT1oRVVfFI"
   }
 ]

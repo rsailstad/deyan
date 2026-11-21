@@ -240,39 +240,54 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
       </section>
 
       {/* ============================================================
-          3. OCLU EVENT - Upcoming show
-          (Surface the hidden event as a focal point)
+          3. FULL LIVE SHOW - Seven Seas You Should Swim @ Oclu Events
       ============================================================ */}
-      <section className="relative z-10 mx-auto max-w-3xl px-4 py-12 sm:px-6">
-        <div className="rounded-2xl border border-[var(--accent-green)]/20 bg-gradient-to-r from-[var(--accent-green)]/5 to-transparent p-6 sm:p-8">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <div className="flex items-start gap-4">
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[var(--accent-green)]/10 border border-[var(--accent-green)]/20 px-4 py-3 shrink-0">
-                <span className="text-xs font-mono uppercase tracking-wider text-[var(--accent-green)]">Nov</span>
-                <span className="text-2xl font-black text-white leading-none mt-1">14</span>
+      <section className="relative z-10 mx-auto max-w-4xl px-4 py-12 sm:px-6">
+        <div className="rounded-3xl border border-white/15 bg-gradient-to-r from-purple-950/40 via-black to-black p-6 sm:p-8 backdrop-blur-xl shadow-2xl">
+          <div className="flex flex-col md:flex-row md:items-center gap-6">
+            <a
+              href="https://youtu.be/uXT1oRVVfFI"
+              target="_blank"
+              rel="noreferrer"
+              className="group relative aspect-video w-full md:w-72 shrink-0 overflow-hidden rounded-2xl border border-white/20 bg-black shadow-lg"
+            >
+              <Image
+                src="https://i.ytimg.com/vi/uXT1oRVVfFI/maxresdefault.jpg"
+                alt="Seven Seas You Should Swim: The Experience @ Oclu Events"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 280px"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
+                <span className="flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-xs font-bold uppercase tracking-widest text-black shadow-xl group-hover:scale-110 transition">
+                  <Play className="h-4 w-4 fill-current translate-x-0.5" />
+                  Watch Live
+                </span>
               </div>
-              <div>
-                <p className="text-xs font-mono uppercase tracking-widest text-[var(--accent-green)] mb-1">
-                  Live Listening Experience
-                </p>
-                <h3 className="text-lg font-bold text-white">
-                  SEVEN SEAS (SSYSS) @ {eventVenue}
-                </h3>
-                <p className="text-sm text-fg-muted mt-1">
-                  {eventCity} - 20:00 EEST - RSVP Required
-                </p>
-                <p className="text-xs text-white/40 mt-2">
-                  Intimate preview of unreleased tracks. 120 guests max.
-                </p>
+            </a>
+            <div className="flex-1 space-y-2">
+              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[var(--accent-green)]">
+                <Youtube className="h-4 w-4 text-red-500 fill-current" />
+                <span>Full Concert Film // Out Now</span>
+              </div>
+              <h3 className="text-xl font-black text-white sm:text-2xl">
+                Seven Seas You Should Swim: The Experience @ Oclu Events
+              </h3>
+              <p className="text-xs sm:text-sm text-fg-muted leading-relaxed">
+                Watch the full 41-minute live performance from Bucharest featuring the 14-track setlist (31st Sedative, Prophet, Jaguar, Narcissist, Golden Child).
+              </p>
+              <div className="pt-2">
+                <a
+                  href="https://youtu.be/uXT1oRVVfFI"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-red-600 hover:bg-red-500 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-lg transition hover:scale-105 active:scale-95"
+                >
+                  <Play className="h-3.5 w-3.5 fill-current" />
+                  Watch Full Show on YouTube
+                </a>
               </div>
             </div>
-            <a
-              href={`mailto:${CONTACT_EMAIL}?subject=RSVP%20SSYSS%20Listening%20Experience`}
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--accent-green)] px-5 py-2.5 text-sm font-bold text-black transition hover:scale-105 active:scale-95 shrink-0"
-            >
-              <Calendar className="h-4 w-4" />
-              RSVP
-            </a>
           </div>
         </div>
       </section>
