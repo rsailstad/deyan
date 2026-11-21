@@ -125,6 +125,51 @@
       "recommended_track": "Lemon Tree",
       "requirements": "Underground rap submission",
       "status": "Ready to pitch"
+    },
+    {
+      "name": "Support Hip Hop (Spotify Playlists)",
+      "platform": "Spotify Curator / Blog",
+      "method": "Web Form",
+      "contact": "https://supporthiphop.com/submit-your-music/submit-your-music-to-our-spotify-playlist",
+      "recommended_track": "Lemon Tree / Wave: 31st Sedative",
+      "requirements": "Spotify track link, short bio, genre selection",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "IAPGroup Underground Rap Network",
+      "platform": "Spotify Curator (41 Underground Hip Hop Playlists)",
+      "method": "SubmitLink Portal",
+      "contact": "https://submitlink.io/c/iapgroup",
+      "recommended_track": "Lemon Tree",
+      "requirements": "Track submission via SubmitLink",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Skeler / Aquila Rift (Wave & Phonk)",
+      "platform": "YouTube Channel & Spotify Playlists",
+      "method": "Email",
+      "contact": "renzo.nicolaes@icloud.com",
+      "recommended_track": "Wave: 31st Sedative",
+      "requirements": "Track link, social links, bio",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "GMX Music (Phonk & Underground Trap)",
+      "platform": "YouTube & Streaming Network",
+      "method": "Web Form",
+      "contact": "https://gmxmusic.com/for-artists.html",
+      "recommended_track": "JAGUAR / Wave: 31st Sedative",
+      "requirements": "Free non-exclusive promotional submission",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "DailyPlaylists Free Trap & Rap Curators",
+      "platform": "Spotify Curator Aggregator",
+      "method": "Web Portal",
+      "contact": "https://dailyplaylists.com",
+      "recommended_track": "Lemon Tree / 31st Sedative",
+      "requirements": "Connect Spotify artist profile, select 5 free curator channels per track",
+      "status": "Ready to pitch"
     }
   ]
 }

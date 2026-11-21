@@ -1,0 +1,29 @@
+=== YOUTUBE SHORTS CONVERSION BLUEPRINT (@realdeyan) ===
+
+Goal: Convert short-form video views directly into YouTube Channel Subscribers using the `?sub_confirmation=1` URL.
+
+--- CLIP #1: Wave: 31st Sedative (The Drop) ---
+- Timestamp: 0:45 - 1:10
+- Visual: Dark neon night drive cut + synth waveform glitch overlay.
+- Text Overlay (Kinetic Lyrics): "Swallowed before my eyes... 31st sedative on a slow march."
+- Audio: Heavy 808 drop section.
+- Pinned Comment:
+  "Full video out now on YouTube 🩸
+   Subscribe to the channel: https://www.youtube.com/@realdeyan?sub_confirmation=1
+   Stream on Spotify: https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56"
+
+--- CLIP #2: Lemon Tree (Lyrical Delivery) ---
+- Timestamp: 0:30 - 0:55
+- Visual: Moody monochrome street aesthetic + distorted bass pulse.
+- Text Overlay: "Lemon Tree // Seven Seas You Should Swim"
+- Pinned Comment:
+  "Watch official music video: https://youtu.be/D45ntFK-XlI
+   Subscribe for upcoming drops: https://www.youtube.com/@realdeyan?sub_confirmation=1"
+
+--- CLIP #3: Live Concert Film Highlight (Prophet @ Oclu Events) ---
+- Timestamp: 3:49 - 4:15 from https://youtu.be/uXT1oRVVfFI
+- Visual: Live concert crowd, stage lighting, live microphone performance.
+- Text Overlay: "LIVE AT OCLU EVENTS // PROPHET"
+- Pinned Comment:
+  "Watch the full 41-min concert film: https://youtu.be/uXT1oRVVfFI
+   Subscribe: https://www.youtube.com/@realdeyan?sub_confirmation=1"
