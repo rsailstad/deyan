@@ -18,11 +18,14 @@ def save_data(data):
 
 def list_targets():
     data = load_data()
-    print(f"=== OUTREACH TARGETS FOR {data['artist']['name']} ({data['artist']['email']}) ===")
-    print(f"{'#':<3} {'Target Name':<32} {'Platform/Method':<25} {'Track':<20} {'Status':<15}")
-    print("-" * 98)
+    print(f"=== OUTREACH TARGET INTELLIGENCE FOR {data['artist']['name']} ({data['artist']['email']}) ===")
+    print(f"{'#':<3} {'Target Name':<30} {'Platform/Method':<25} {'Focus Track':<25}")
+    print("-" * 88)
     for idx, t in enumerate(data['targets'], 1):
-        print(f"{idx:<3} {t['name']:<32} {t['method']:<25} {t['recommended_track']:<20} {t['status']:<15}")
+        print(f"{idx:<3} {t['name']:<30} {t['method']:<25} {t['recommended_track']:<25}")
+        print(f"    └ Audience: {t.get('audience', 'N/A')}")
+        print(f"    └ Rationale: {t.get('reason_to_target', 'N/A')}
+")
 
 def update_status(idx, status):
     data = load_data()
