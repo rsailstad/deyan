@@ -1,12 +1,12 @@
 === YOUTUBE SHORTS BLUEPRINT (FOCUS TRACKS: LEMON TREE & PROPHET) ===
 
-Goal: Drive high-converting subscribers to `@realdeyan` using direct subscription parameter (`?sub_confirmation=1`).
+Goal: Drive high-converting subscribers interested in Kendrick Lamar, J. Cole & Kanye West-style lyrical rap to `@realdeyan`.
 
 --- FOCUS SHORT #1: Lemon Tree (Official Music Video) ---
 - Source Video: https://youtu.be/D45ntFK-XlI
 - Timestamp: 0:30 - 0:55
 - Visual: Moody street aesthetic + distorted bass pulse.
-- Text Overlay: "Lemon Tree // Official Music Video"
+- Text Overlay: "Lemon Tree // Conceptual Hip-Hop"
 - Pinned Comment:
   "Watch full Lemon Tree music video: https://youtu.be/D45ntFK-XlI
    Subscribe for upcoming drops: https://www.youtube.com/@realdeyan?sub_confirmation=1"

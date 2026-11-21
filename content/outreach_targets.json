@@ -8,43 +8,102 @@
     "website": "https://realdeyan.com",
     "youtube": "https://www.youtube.com/@realdeyan",
     "spotify": "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56",
-    "genre": "Underground Hip-Hop / Dark Wave / Atmospheric Trap"
-  },
-  "catalog_tracks": {
-    "wave_31st_sedative": {
-      "title": "Wave: 31st Sedative",
-      "youtubeUrl": "https://www.youtube.com/watch?v=am5f5fLTpLs",
-      "spotifyUrl": "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56",
-      "vibe": "Dark underground wave, 808 bass, atmospheric, nocturnal drive",
-      "stats": "1.5K+ organic YouTube views"
-    },
-    "lemon_tree": {
-      "title": "Lemon Tree",
-      "youtubeUrl": "https://www.youtube.com/watch?v=D45ntFK-XlI",
-      "spotifyUrl": "https://open.spotify.com/album/2a9VvSg5mLktBtPiN140O2",
-      "vibe": "Moody lead single, raw lyrical delivery, official music video",
-      "stats": "Official video directed & edited by Deyan-Iosif Iary"
-    },
-    "jaguar": {
-      "title": "JAGUAR",
-      "youtubeUrl": "https://www.youtube.com/watch?v=XPjH28VEdrw",
-      "spotifyUrl": "https://open.spotify.com/album/0P8rmFRZXf5gqD1B3gcPIX",
-      "vibe": "Midnight street aesthetics, heavy basslines, dark phonk/trap crossover",
-      "stats": "Official video drop"
-    }
+    "genre": "Conceptual Hip-Hop / Lyrical Rap / Dark Atmospheric Production",
+    "influences": [
+      "Kendrick Lamar",
+      "J. Cole",
+      "Kanye West",
+      "Joey Bada$$",
+      "JID"
+    ]
   },
   "targets": [
+    {
+      "name": "HipHop-N-More (Saturday Spotlight)",
+      "platform": "Premier Hip-Hop Blog & Editorial",
+      "method": "Web Submission / Email",
+      "contact": "https://hiphop-n-more.com",
+      "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
+      "audience": "1M+ monthly readers following J. Cole, Kendrick Lamar, Kanye West, and major/indie lyrical rap releases.",
+      "reason_to_target": "The 'Saturday Spotlight' feature specifically highlights talented independent lyricists and self-producers.",
+      "requirements": "Song link, official video link, artist bio, cover artwork, press release",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Rap Nerd Reviews",
+      "platform": "YouTube Channel & Hip-Hop Blog",
+      "method": "YouTube / Web Portal",
+      "contact": "https://www.youtube.com/watch?v=StR3ypaHJpA",
+      "recommended_track": "Prophet (Official Video: C07LC5kb-C8)",
+      "audience": "100K+ hip-hop nerds and album reviewers following underground conscious rap and lyric-heavy projects.",
+      "reason_to_target": "Full album/track review format ideal for Deyan's conceptual songwriting and self-produced beats.",
+      "requirements": "Track/Video stream link, album concept notes",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Hiphop Heads Spotify Network",
+      "platform": "Spotify Curator (Conscious Rap)",
+      "method": "One-Submit Portal",
+      "contact": "https://one-submit.com/curator/submit-conscious-hip-hop-to-hiphop-heads-spotify-promotion",
+      "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
+      "audience": "11K+ active Spotify listeners seeking Kendrick, Cole, JID, and Joey Bada$$-style lyrical tracks.",
+      "reason_to_target": "Direct placement in a playlist designed for fans of high-art, lyric-first hip-hop.",
+      "requirements": "Spotify track link, genre selection (Conscious Hip-Hop)",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Emotional Hustle",
+      "platform": "Spotify Playlist Curator (Lyrical Hip-Hop)",
+      "method": "One-Submit Portal",
+      "contact": "https://one-submit.com/curator/submit-lyrical-hip-hop-to-emotional-hustle-spotify-promotion",
+      "recommended_track": "Prophet (Official Video: C07LC5kb-C8)",
+      "audience": "25K+ followers seeking introspective rap, complex rhyme schemes, and deep storytelling.",
+      "reason_to_target": "High listener engagement and long average stream duration.",
+      "requirements": "Spotify track link, track concept description",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Pulse Hutch Music Blog",
+      "platform": "Music Blog (Conscious & Jazz-Hop)",
+      "method": "One-Submit Portal",
+      "contact": "https://one-submit.com/curator/submit-conscious-hip-hop-jazz-hop-to-pulse-hutch-music-blogs",
+      "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
+      "audience": "50K+ readers who prefer conceptual rap, organic instrumentation, and thoughtful lyrics over commercial trap.",
+      "reason_to_target": "Strong editorial focus on self-produced indie artists.",
+      "requirements": "Music video link, press release, bio",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Hero Arc Playlist",
+      "platform": "Spotify Curator (Storytelling Hip-Hop)",
+      "method": "One-Submit Portal",
+      "contact": "https://one-submit.com/curator/submit-conscious-hip-hop-to-hero-arc-playlist-spotify-promotion",
+      "recommended_track": "Prophet (Official Video: C07LC5kb-C8)",
+      "audience": "15K+ Spotify listeners following narrative and concept-album hip-hop.",
+      "reason_to_target": "Perfect fit for Deyan's Seven Seas You Should Swim album narrative arc.",
+      "requirements": "Spotify track link",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "r/HipHopHeads",
+      "platform": "Reddit Premiere Community (2.5M+ Members)",
+      "method": "Subreddit Post ([FRESH VIDEO])",
+      "contact": "https://reddit.com/r/hiphopheads",
+      "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
+      "audience": "2.5M+ hardcore hip-hop fans and music critics following Kendrick Lamar, J. Cole, Kanye, and underground lyricists.",
+      "reason_to_target": "The #1 digital community for hip-hop purists. A upvoted [FRESH VIDEO] post can generate 10,000+ views in 24 hours.",
+      "requirements": "[FRESH VIDEO] title tag, direct YouTube link",
+      "status": "Ready to pitch"
+    },
     {
       "name": "UndergroundHipHopBlog (UGHHBLOG)",
       "platform": "YouTube Channel & Hip-Hop Blog",
       "method": "Email (UGHHBLOG@GMAIL.COM)",
       "contact": "UGHHBLOG@GMAIL.COM",
-      "url": "https://undergroundhiphopblog.com/contact",
-      "youtube_channel": "https://www.youtube.com/@ughhblog",
       "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
-      "audience": "350K+ combined monthly readers & YouTube subscribers. Dedicated hardcore underground hip-hop, boom bap, and indie rap heads.",
-      "reason_to_target": "#1 ranked site on Google for 'Underground Hip Hop'. High domain authority backlinks to realdeyan.com + organic YouTube channel feature.",
-      "requirements": "ARTIST NAME, LOCATION, PROJECT LINK EMBED CODE, BRIEF DESCRIPTION, ARTWORK, SOCIAL LINKS",
+      "audience": "350K+ combined monthly readers & YouTube subscribers following independent rap MCs.",
+      "reason_to_target": "#1 ranked site on Google for 'Underground Hip Hop'. High domain authority backlinks + organic YouTube feature.",
+      "requirements": "ARTIST NAME, LOCATION, PROJECT LINK EMBED CODE, DESCRIPTION, ARTWORK, SOCIAL LINKS",
       "status": "Ready to pitch"
     },
     {
@@ -56,72 +115,6 @@
       "audience": "180K+ monthly visitors searching for emerging US & global independent rappers.",
       "reason_to_target": "Free editorial feature coverage that builds indexable press authority for Deyan's Google Knowledge Panel.",
       "requirements": "Song link, music video link, artist name, bio, press photo, social links",
-      "status": "Ready to pitch"
-    },
-    {
-      "name": "KLEXXER",
-      "platform": "YouTube Channel & Curation Network",
-      "method": "Web Portal (klexxer.com/submit)",
-      "contact": "https://www.klexxer.com/submit",
-      "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
-      "audience": "500K+ YouTube subscribers & Phonk/Wave/Techno night-drive listeners looking for 4K atmospheric visualizers.",
-      "reason_to_target": "High watch-time videos that feed YouTube recommendation algorithm; huge crossover audience for Deyan's dark wave production.",
-      "requirements": "4K visuals / audio track submission link via web portal",
-      "status": "Ready to pitch"
-    },
-    {
-      "name": "Phonk Empire",
-      "platform": "YouTube Channel & Mix Network",
-      "method": "Email (phonkempire25@gmail.com)",
-      "contact": "phonkempire25@gmail.com",
-      "recommended_track": "Prophet (Official Video: C07LC5kb-C8)",
-      "audience": "250K+ Phonk, Drift, and Dark Trap listeners seeking long-play car music & night-drive mixes.",
-      "reason_to_target": "Placement in 1-hour and 3-hour mixes yields passive, continuous stream volume and listener discovery.",
-      "requirements": "Track MP3/WAV link, artist bio, social links",
-      "status": "Ready to pitch"
-    },
-    {
-      "name": "Twisco Phonk",
-      "platform": "YouTube Channel (Phonk & Hardwave)",
-      "method": "Email (twiscophk.contact@gmail.com)",
-      "contact": "twiscophk.contact@gmail.com",
-      "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
-      "audience": "120K+ underground wave, phonk, and distorted bass enthusiasts.",
-      "reason_to_target": "Fast approval cycle for high-quality self-produced submissions; directly converts viewers into YouTube subscribers.",
-      "requirements": "Track stream link, short bio, social handles",
-      "status": "Ready to pitch"
-    },
-    {
-      "name": "Darkwave Label",
-      "platform": "YouTube & Soundcloud Label / Curator",
-      "method": "Email (darkwavelabel@gmail.com)",
-      "contact": "darkwavelabel@gmail.com",
-      "recommended_track": "Prophet (Official Video: C07LC5kb-C8)",
-      "audience": "90K+ dark wave, Gothic trap, and cyberpunk synth listeners.",
-      "reason_to_target": "Exact aesthetic match for Deyan's nocturnal, tape-warble production style.",
-      "requirements": "Demo link, artist info, release artwork",
-      "status": "Ready to pitch"
-    },
-    {
-      "name": "Aurorian Records",
-      "platform": "YouTube Channel & Streaming Label",
-      "method": "Email (demo@aurorianrecords.com)",
-      "contact": "demo@aurorianrecords.com",
-      "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
-      "audience": "200K+ electroclash, phonk, and alternative trap fans across YouTube & Spotify.",
-      "reason_to_target": "Cross-platform promotion (YouTube upload + Spotify playlist add in a single feature).",
-      "requirements": "Demo submission for label release / channel feature",
-      "status": "Ready to pitch"
-    },
-    {
-      "name": "Tribal Trap",
-      "platform": "Major Independent Label & YouTube Channel",
-      "method": "Web Form (tribalmusicgroup.com/tribaltrap)",
-      "contact": "https://tribalmusicgroup.com/tribaltrap",
-      "recommended_track": "Prophet (Official Video: C07LC5kb-C8)",
-      "audience": "1.2M+ YouTube subscribers & heavy bass/phonk/trap listeners globally.",
-      "reason_to_target": "Tier-1 exposure. A feature or distribution release here drives tens of thousands of initial streams.",
-      "requirements": "Demo submission form with private streaming link",
       "status": "Ready to pitch"
     },
     {
@@ -141,31 +134,20 @@
       "method": "SubmitLink Portal (submitlink.io/c/iapgroup)",
       "contact": "https://submitlink.io/c/iapgroup",
       "recommended_track": "Prophet (Official Video: C07LC5kb-C8)",
-      "audience": "300K+ combined playlist followers across 41 curated underground rap & afropop playlists.",
-      "reason_to_target": "Bot-checked, verified real-listener playlists that trigger Spotify's algorithmic Discover Weekly and Radio feeds.",
+      "audience": "300K+ combined playlist followers across 41 curated underground rap playlists.",
+      "reason_to_target": "Bot-checked, verified real-listener playlists that trigger Spotify's algorithmic Discover Weekly.",
       "requirements": "Track submission via SubmitLink portal",
       "status": "Ready to pitch"
     },
     {
-      "name": "Skeler / Aquila Rift",
-      "platform": "YouTube & Spotify Wave Curator",
-      "method": "Email (renzo.nicolaes@icloud.com)",
-      "contact": "renzo.nicolaes@icloud.com",
+      "name": "KLEXXER",
+      "platform": "YouTube Channel & Curation Network",
+      "method": "Web Portal (klexxer.com/submit)",
+      "contact": "https://www.klexxer.com/submit",
       "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
-      "audience": "150K+ hardwave and dark wave purists following scene pioneer Skeler.",
-      "reason_to_target": "Highest quality stamp of approval in the wave scene; commands deep respect from underground fans.",
-      "requirements": "Track link, social links, short artist bio",
-      "status": "Ready to pitch"
-    },
-    {
-      "name": "GMX Music",
-      "platform": "YouTube & Streaming Network",
-      "method": "Web Form (gmxmusic.com/for-artists.html)",
-      "contact": "https://gmxmusic.com/for-artists.html",
-      "recommended_track": "Prophet (Official Video: C07LC5kb-C8)",
-      "audience": "180K+ creators and phonk/trap listeners seeking non-exclusive background tracks.",
-      "reason_to_target": "Non-exclusive feature where Deyan retains 100% rights while getting channel exposure.",
-      "requirements": "Free non-exclusive promotional submission form",
+      "audience": "500K+ YouTube subscribers & dark atmospheric trap listeners.",
+      "reason_to_target": "High watch-time channel that feeds YouTube recommendation algorithm.",
+      "requirements": "4K visuals / audio track submission link via web portal",
       "status": "Ready to pitch"
     },
     {
@@ -174,9 +156,20 @@
       "method": "Web Portal (dailyplaylists.com)",
       "contact": "https://dailyplaylists.com",
       "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
-      "audience": "Thousands of indie Spotify playlist curators covering Trap, Emo Rap, and Underground Hip-Hop.",
+      "audience": "Thousands of indie Spotify playlist curators covering Conscious Rap, Emo Rap, and Lyrical Hip-Hop.",
       "reason_to_target": "Enables submitting Lemon Tree & Prophet to 5 free Spotify curators every week.",
       "requirements": "Connect Spotify artist profile & pitch tracks",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Promo Sound",
+      "platform": "YouTube Channel (Promo Rap)",
+      "method": "YouTube / Email",
+      "contact": "https://www.youtube.com/@promorap",
+      "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
+      "audience": "80K+ subscribers looking for upcoming underground MCs and raw rap drops.",
+      "reason_to_target": "Direct channel video uploads dedicated to independent rappers.",
+      "requirements": "Underground rap submission link & video file",
       "status": "Ready to pitch"
     },
     {
@@ -188,17 +181,6 @@
       "audience": "25K+ active Reddit hip-hop fans looking specifically for raw, underground talent.",
       "reason_to_target": "Highly engaged community with direct playlist additions and thread comments.",
       "requirements": "Post submission formatting following subreddit guidelines",
-      "status": "Ready to pitch"
-    },
-    {
-      "name": "Promo Sound",
-      "platform": "YouTube Channel (Promo Rap)",
-      "method": "YouTube / Email",
-      "contact": "https://www.youtube.com/@promorap",
-      "recommended_track": "Lemon Tree (Official Video: D45ntFK-XlI)",
-      "audience": "80K+ subscribers looking for upcoming underground MCs and raw rap drops.",
-      "reason_to_target": "Direct channel uploads dedicated to independent rappers.",
-      "requirements": "Underground rap submission link & video file",
       "status": "Ready to pitch"
     }
   ]
