@@ -98,6 +98,14 @@ export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {
       <section className="relative min-h-[88vh] flex flex-col justify-center px-4 pt-28 pb-12 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[350px] bg-purple-900/20 blur-[130px] -z-10 pointer-events-none" />
 
+        {/* Album Announcement Banner */}
+        <div className="text-center mb-6">
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-[var(--accent-green)]/40 bg-[var(--accent-green)]/10 px-5 py-2 text-xs sm:text-sm font-mono uppercase tracking-widest text-[var(--accent-green)] shadow-[0_0_25px_rgba(34,197,94,0.2)]">
+            <span className="h-2 w-2 rounded-full bg-[var(--accent-green)] animate-pulse" />
+            <span>New Album Out Now: Seven Seas You Should Swim (SSYSS)</span>
+          </div>
+        </div>
+
         {/* Artistic tagline */}
         <div className="text-center mb-10">
           <p className="text-base sm:text-lg font-light italic text-white/70 leading-relaxed max-w-2xl mx-auto">

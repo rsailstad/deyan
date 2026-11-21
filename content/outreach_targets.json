@@ -1,0 +1,130 @@
+{
+  "artist": {
+    "name": "Deyan",
+    "full_name": "Deyan-Iosif Iary",
+    "email": "realdeyan@gmail.com",
+    "handle": "@realdeyan",
+    "location": "Bucharest, Romania",
+    "website": "https://realdeyan.com",
+    "youtube": "https://www.youtube.com/@realdeyan",
+    "spotify": "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56",
+    "genre": "Underground Hip-Hop / Dark Wave / Atmospheric Trap"
+  },
+  "catalog_tracks": {
+    "wave_31st_sedative": {
+      "title": "Wave: 31st Sedative",
+      "youtubeUrl": "https://www.youtube.com/watch?v=am5f5fLTpLs",
+      "spotifyUrl": "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56",
+      "vibe": "Dark underground wave, 808 bass, atmospheric, nocturnal drive",
+      "stats": "1.5K+ organic YouTube views"
+    },
+    "lemon_tree": {
+      "title": "Lemon Tree",
+      "youtubeUrl": "https://www.youtube.com/watch?v=D45ntFK-XlI",
+      "spotifyUrl": "https://open.spotify.com/album/2a9VvSg5mLktBtPiN140O2",
+      "vibe": "Moody lead single, raw lyrical delivery, official music video",
+      "stats": "Official video directed & edited by Deyan-Iosif Iary"
+    },
+    "jaguar": {
+      "title": "JAGUAR",
+      "youtubeUrl": "https://www.youtube.com/watch?v=XPjH28VEdrw",
+      "spotifyUrl": "https://open.spotify.com/album/0P8rmFRZXf5gqD1B3gcPIX",
+      "vibe": "Midnight street aesthetics, heavy basslines, dark phonk/trap crossover",
+      "stats": "Official video drop"
+    }
+  },
+  "targets": [
+    {
+      "name": "UndergroundHipHopBlog (UGHHBLOG)",
+      "platform": "YouTube & Blog (Top Google Underground Hip Hop site)",
+      "method": "Email",
+      "contact": "UGHHBLOG@GMAIL.COM",
+      "url": "https://undergroundhiphopblog.com/contact",
+      "youtube_channel": "https://www.youtube.com/@ughhblog",
+      "recommended_track": "Wave: 31st Sedative",
+      "requirements": "ARTIST NAME, LOCATION, PROJECT LINK EMBED CODE (Youtube/Spotify), BRIEF DESCRIPTION, PROMOTIONAL ARTWORK, SOCIAL LINKS",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Raptology",
+      "platform": "Rap & Hip-Hop Blog & Editorial",
+      "method": "Email / Web Form",
+      "contact": "https://raptology.com/submit-your-music",
+      "recommended_track": "Lemon Tree",
+      "requirements": "Song link, music video link, artist name, bio, press photo, social links, release date",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "KLEXXER",
+      "platform": "YouTube Channel (Techno, Phonk, Trap, Dark Wave)",
+      "method": "Web Form",
+      "contact": "https://www.klexxer.com/submit",
+      "recommended_track": "Wave: 31st Sedative",
+      "requirements": "4K visuals / audio track submission link",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Phonk Empire",
+      "platform": "YouTube Channel (Night Drive Phonk & Trap Mixes)",
+      "method": "Email",
+      "contact": "phonkempire25@gmail.com",
+      "recommended_track": "JAGUAR / Wave: 31st Sedative",
+      "requirements": "Track MP3/WAV link, short intro",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Twisco Phonk",
+      "platform": "YouTube Channel (Hardwave / Phonk)",
+      "method": "Email",
+      "contact": "twiscophk.contact@gmail.com",
+      "recommended_track": "Wave: 31st Sedative",
+      "requirements": "Track submission link",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Darkwave Label",
+      "platform": "YouTube & Soundcloud Label / Promoter",
+      "method": "Email",
+      "contact": "darkwavelabel@gmail.com",
+      "recommended_track": "Wave: 31st Sedative",
+      "requirements": "Demo link, artist info",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Aurorian Records",
+      "platform": "YouTube & Soundcloud (Electroclash, Phonk, Hardwave)",
+      "method": "Email",
+      "contact": "demo@aurorianrecords.com",
+      "recommended_track": "Wave: 31st Sedative",
+      "requirements": "Demo submission for label release / channel feature",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Tribal Trap",
+      "platform": "Major Independent Label & YouTube Channel",
+      "method": "Web Form",
+      "contact": "https://tribalmusicgroup.com/tribaltrap",
+      "recommended_track": "JAGUAR",
+      "requirements": "Demo submission form",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "r/Roundtableofrap",
+      "platform": "Reddit / Playlist Curator",
+      "method": "Reddit Submission",
+      "contact": "https://reddit.com/r/Roundtableofrap",
+      "recommended_track": "Lemon Tree",
+      "requirements": "Post submission for curated underground rap playlists",
+      "status": "Ready to pitch"
+    },
+    {
+      "name": "Promo Sound",
+      "platform": "YouTube Channel (Promo Rap & Underground MCs)",
+      "method": "YouTube / Email",
+      "contact": "https://www.youtube.com/@promorap",
+      "recommended_track": "Lemon Tree",
+      "requirements": "Underground rap submission",
+      "status": "Ready to pitch"
+    }
+  ]
+}

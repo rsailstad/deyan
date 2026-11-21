@@ -14,8 +14,8 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
       <Header />
       <main className="relative z-10 flex flex-1 flex-col">{children}</main>
       <StickyStreamingDock
-        latestTrackTitle="Wave: 31st Sedative"
-        youtubeUrl="https://www.youtube.com/watch?v=am5f5fLTpLs"
+        latestTrackTitle="Seven Seas You Should Swim (SSYSS)"
+        youtubeUrl="https://www.youtube.com/@realdeyan/releases"
         spotifyUrl="https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56"
       />
       <Footer />

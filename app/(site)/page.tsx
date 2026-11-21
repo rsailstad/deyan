@@ -5,7 +5,7 @@ import { getReleases, getVideos } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Deyan",
   description:
-    "Official website and archive for Bucharest-based hip-hop artist Deyan. Stream 'Wave: 31st Sedative', 'Lemon Tree', and the Seven Seas You Should Swim rollout.",
+    "Official website and archive for Bucharest-based hip-hop artist Deyan. Out Now: 'Seven Seas You Should Swim' (SSYSS) album on Spotify & YouTube.",
 };
 
 export const dynamic = "force-dynamic";
