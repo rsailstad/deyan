@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { InteractiveHome } from "@/components/InteractiveHome";
+import { JsonLd } from "@/components/JsonLd";
 import { getReleases, getVideos } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -14,5 +15,10 @@ export default function HomePage() {
   const releases = getReleases();
   const videos = getVideos();
 
-  return <InteractiveHome releases={releases} videos={videos} />;
+  return (
+    <>
+      <JsonLd releases={releases} videos={videos} />
+      <InteractiveHome releases={releases} videos={videos} />
+    </>
+  );
 }
