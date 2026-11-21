@@ -1,29 +1,21 @@
-=== YOUTUBE SHORTS CONVERSION BLUEPRINT (@realdeyan) ===
+=== YOUTUBE SHORTS BLUEPRINT (FOCUS TRACKS: LEMON TREE & PROPHET) ===
 
-Goal: Convert short-form video views directly into YouTube Channel Subscribers using the `?sub_confirmation=1` URL.
+Goal: Drive high-converting subscribers to `@realdeyan` using direct subscription parameter (`?sub_confirmation=1`).
 
---- CLIP #1: Wave: 31st Sedative (The Drop) ---
-- Timestamp: 0:45 - 1:10
-- Visual: Dark neon night drive cut + synth waveform glitch overlay.
-- Text Overlay (Kinetic Lyrics): "Swallowed before my eyes... 31st sedative on a slow march."
-- Audio: Heavy 808 drop section.
-- Pinned Comment:
-  "Full video out now on YouTube 🩸
-   Subscribe to the channel: https://www.youtube.com/@realdeyan?sub_confirmation=1
-   Stream on Spotify: https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56"
-
---- CLIP #2: Lemon Tree (Lyrical Delivery) ---
+--- FOCUS SHORT #1: Lemon Tree (Official Music Video) ---
+- Source Video: https://youtu.be/D45ntFK-XlI
 - Timestamp: 0:30 - 0:55
-- Visual: Moody monochrome street aesthetic + distorted bass pulse.
-- Text Overlay: "Lemon Tree // Seven Seas You Should Swim"
+- Visual: Moody street aesthetic + distorted bass pulse.
+- Text Overlay: "Lemon Tree // Official Music Video"
 - Pinned Comment:
-  "Watch official music video: https://youtu.be/D45ntFK-XlI
+  "Watch full Lemon Tree music video: https://youtu.be/D45ntFK-XlI
    Subscribe for upcoming drops: https://www.youtube.com/@realdeyan?sub_confirmation=1"
 
---- CLIP #3: Live Concert Film Highlight (Prophet @ Oclu Events) ---
-- Timestamp: 3:49 - 4:15 from https://youtu.be/uXT1oRVVfFI
+--- FOCUS SHORT #2: Prophet (Live @ Oclu Events) ---
+- Source Video: https://youtu.be/uXT1oRVVfFI
+- Timestamp: 3:49 - 4:15
 - Visual: Live concert crowd, stage lighting, live microphone performance.
-- Text Overlay: "LIVE AT OCLU EVENTS // PROPHET"
+- Text Overlay: "PROPHET // LIVE AT OCLU EVENTS"
 - Pinned Comment:
-  "Watch the full 41-min concert film: https://youtu.be/uXT1oRVVfFI
-   Subscribe: https://www.youtube.com/@realdeyan?sub_confirmation=1"
+  "Watch full concert film: https://youtu.be/uXT1oRVVfFI
+   Subscribe to Deyan: https://www.youtube.com/@realdeyan?sub_confirmation=1"
