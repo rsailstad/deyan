@@ -5,6 +5,7 @@ export type OutboundMeta = {
 };
 
 export function withUtm(url: string, meta: OutboundMeta): string {
+  if (!url) return "";
   try {
     const target = new URL(url);
     const params = target.searchParams;

@@ -133,26 +133,28 @@ export function ReleaseCard({ release, variant = "primary", singleCta }: Release
                 Watch
               </Link>
             </Button>
-            <Button
-              asChild
-              variant="ghost"
-              className="rounded-full px-4 py-2 text-sm text-fg-muted"
-            >
-              <Link
-                href={withUtm(release.appleUrl, { platform: "other", context: "release-card", label: release.title })}
-                target="_blank"
-                rel="noreferrer"
-                onClick={() =>
-                  trackOutbound("apple_click", release.appleUrl, {
-                    platform: "other",
-                    context: "release-card",
-                    label: release.title,
-                  })
-                }
+            {release.appleUrl && !release.appleUrl.includes("1234567890") && (
+              <Button
+                asChild
+                variant="ghost"
+                className="rounded-full px-4 py-2 text-sm text-fg-muted"
               >
-                Apple Music
-              </Link>
-            </Button>
+                <Link
+                  href={withUtm(release.appleUrl, { platform: "other", context: "release-card", label: release.title })}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() =>
+                    trackOutbound("apple_click", release.appleUrl, {
+                      platform: "other",
+                      context: "release-card",
+                      label: release.title,
+                    })
+                  }
+                >
+                  Apple Music
+                </Link>
+              </Button>
+            )}
           </div>
         )}
       </CardFooter>

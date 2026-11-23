@@ -39,11 +39,21 @@ export function ListenClient({ initialRelease, allReleases }: ListenClientProps)
     label: currentRelease.title,
   });
 
-  const appleTarget = withUtm(currentRelease.appleUrl, {
-    platform: "apple",
-    context: "meta_ad_smartlink",
-    label: currentRelease.title,
-  });
+  const hasValidAppleUrl =
+    Boolean(currentRelease.appleUrl) &&
+    !currentRelease.appleUrl.includes("1234567890") &&
+    !currentRelease.appleUrl.includes("6GpedMdbQvByp6IlgiL25c") &&
+    !currentRelease.appleUrl.includes("0P8rmFRZXf5gqD1B3gcPIX") &&
+    !currentRelease.appleUrl.includes("0oEfyZmJ1hdAj1BLXHVHfB") &&
+    !currentRelease.appleUrl.includes("0oNLdEU8xMhLq6I7gFMXhH");
+
+  const appleTarget = hasValidAppleUrl
+    ? withUtm(currentRelease.appleUrl, {
+        platform: "apple",
+        context: "meta_ad_smartlink",
+        label: currentRelease.title,
+      })
+    : "";
 
   return (
     <div className="relative min-h-screen w-full flex flex-col items-center justify-between px-4 py-8 sm:py-12 overflow-hidden bg-black text-white selection:bg-emerald-500 selection:text-black font-sans">
@@ -177,22 +187,24 @@ export function ListenClient({ initialRelease, allReleases }: ListenClientProps)
             </span>
           </a>
 
-          {/* TERTIARY: APPLE MUSIC */}
-          <a
-            href={appleTarget}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => handleOutbound("apple", currentRelease.appleUrl, e)}
-            className="flex items-center justify-between w-full px-5 py-3 rounded-xl bg-zinc-900/60 hover:bg-zinc-800/80 border border-white/5 text-zinc-300 font-medium transition-all duration-200"
-          >
-            <div className="flex items-center gap-3">
-              <svg className="w-5 h-5 fill-[#FA2D48]" viewBox="0 0 24 24">
-                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.088 5.75c.088 0 .177.01.265.03l.088.025c.088.024.168.064.24.119.071.054.129.124.173.208.043.085.065.18.065.286v6.079c0 .48-.13.882-.39 1.205-.26.323-.62.532-1.08.627l-.337.045c-.477.062-.882.203-1.216.423-.334.22-.589.516-.766.887-.176.371-.264.805-.264 1.303 0 .543.109 1.011.327 1.404.218.393.526.697.925.912.398.215.867.323 1.407.323.541 0 1.012-.11 1.413-.33.402-.22.709-.53.921-.931.212-.4.318-.879.318-1.436V8.672l6.096-1.503v6.398c0 .48-.13.883-.391 1.207-.26.324-.62.532-1.08.627l-.336.044c-.477.062-.883.203-1.217.423-.334.22-.589.516-.765.887-.176.371-.265.805-.265 1.303 0 .543.109 1.011.327 1.404.218.393.527.697.926.912.398.215.867.323 1.406.323.541 0 1.012-.11 1.413-.33.402-.22.709-.53.921-.931.212-.4.318-.879.318-1.436V4.183c0-.309-.108-.567-.323-.775-.215-.207-.492-.323-.83-.347L12.56 4.79c-.198.05-.371.144-.518.283-.148.138-.242.316-.282.533-.01.047-.015.095-.015.144h.167z"/>
-              </svg>
-              <span className="text-xs sm:text-sm">Apple Music</span>
-            </div>
-            <span className="text-xs text-zinc-500">Listen</span>
-          </a>
+          {/* TERTIARY: APPLE MUSIC (Only shown if valid link exists) */}
+          {hasValidAppleUrl && (
+            <a
+              href={appleTarget}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => handleOutbound("apple", currentRelease.appleUrl, e)}
+              className="flex items-center justify-between w-full px-5 py-3 rounded-xl bg-zinc-900/60 hover:bg-zinc-800/80 border border-white/5 text-zinc-300 font-medium transition-all duration-200"
+            >
+              <div className="flex items-center gap-3">
+                <svg className="w-5 h-5 fill-[#FA2D48]" viewBox="0 0 24 24">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.088 5.75c.088 0 .177.01.265.03l.088.025c.088.024.168.064.24.119.071.054.129.124.173.208.043.085.065.18.065.286v6.079c0 .48-.13.882-.39 1.205-.26.323-.62.532-1.08.627l-.337.045c-.477.062-.882.203-1.216.423-.334.22-.589.516-.766.887-.176.371-.264.805-.264 1.303 0 .543.109 1.011.327 1.404.218.393.526.697.925.912.398.215.867.323 1.407.323.541 0 1.012-.11 1.413-.33.402-.22.709-.53.921-.931.212-.4.318-.879.318-1.436V8.672l6.096-1.503v6.398c0 .48-.13.883-.391 1.207-.26.324-.62.532-1.08.627l-.336.044c-.477.062-.883.203-1.217.423-.334.22-.589.516-.765.887-.176.371-.265.805-.265 1.303 0 .543.109 1.011.327 1.404.218.393.527.697.926.912.398.215.867.323 1.406.323.541 0 1.012-.11 1.413-.33.402-.22.709-.53.921-.931.212-.4.318-.879.318-1.436V4.183c0-.309-.108-.567-.323-.775-.215-.207-.492-.323-.83-.347L12.56 4.79c-.198.05-.371.144-.518.283-.148.138-.242.316-.282.533-.01.047-.015.095-.015.144h.167z"/>
+                </svg>
+                <span className="text-xs sm:text-sm">Apple Music</span>
+              </div>
+              <span className="text-xs text-zinc-500">Listen</span>
+            </a>
+          )}
 
         </div>
 
