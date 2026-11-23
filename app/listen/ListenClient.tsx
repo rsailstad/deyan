@@ -66,7 +66,7 @@ export function ListenClient({ initialRelease, allReleases }: ListenClientProps)
         <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
           <span className="text-xs uppercase tracking-widest text-zinc-300 font-medium">
-            Official Release Hub
+            New Album + Full Catalog on Spotify & YouTube
           </span>
         </div>
 
@@ -151,6 +151,30 @@ export function ListenClient({ initialRelease, allReleases }: ListenClientProps)
               </div>
             </div>
             <ExternalLink className="w-4 h-4 text-zinc-500" />
+          </a>
+
+          {/* YOUTUBE SUBSCRIBE DIRECT CONVERSION BUTTON */}
+          <a
+            href="https://www.youtube.com/@realdeyan?sub_confirmation=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => handleOutbound("youtube", "https://www.youtube.com/@realdeyan?sub_confirmation=1", e)}
+            className="flex items-center justify-between w-full px-5 py-3 rounded-xl bg-red-950/40 hover:bg-red-900/60 border border-red-500/30 text-white font-medium transition-all duration-200 group"
+          >
+            <div className="flex items-center gap-3">
+              <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" />
+              <div className="text-left">
+                <div className="text-xs sm:text-sm font-bold text-red-100 group-hover:text-white">
+                  Subscribe on YouTube
+                </div>
+                <div className="text-[11px] text-zinc-400">
+                  New album drops, live concert videos & exclusives
+                </div>
+              </div>
+            </div>
+            <span className="px-2.5 py-1 rounded bg-red-600 group-hover:bg-red-500 text-[11px] font-bold text-white uppercase tracking-wider">
+              Subscribe
+            </span>
           </a>
 
           {/* TERTIARY: APPLE MUSIC */}
