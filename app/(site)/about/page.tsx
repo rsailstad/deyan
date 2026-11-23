@@ -42,11 +42,11 @@ export default function AboutPage() {
 
             <div className="mt-6 flex items-center gap-3">
               <Link
-                href="mailto:realdeyan@gmail.com"
+                href="mailto:music@realdeyan.com"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-mono uppercase tracking-widest text-black font-semibold hover:bg-white/90 transition shadow-lg"
               >
                 <Mail className="h-4 w-4 text-black" />
-                realdeyan@gmail.com
+                music@realdeyan.com
               </Link>
             </div>
           </div>

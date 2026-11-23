@@ -44,7 +44,7 @@ const SPOTIFY_URL = "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56";
 const YOUTUBE_URL = "https://www.youtube.com/@realdeyan";
 const INSTAGRAM_URL = "https://www.instagram.com/realdeyan/";
 const APPLE_URL = "https://music.apple.com/us/artist/deyan/1234567890";
-const CONTACT_EMAIL = "realdeyan@gmail.com";
+const CONTACT_EMAIL = "music@realdeyan.com";
 const CC_EMAILS = "rsailstad@gmail.com,ancasailstad@yahoo.com";
 
 export function InteractiveHome({ releases, videos }: InteractiveHomeProps) {

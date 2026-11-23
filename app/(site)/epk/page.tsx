@@ -148,11 +148,11 @@ export default function EpkPage() {
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
-            href="mailto:realdeyan@gmail.com?subject=EPK%20Inquiry%20-%20Deyan"
+            href="mailto:music@realdeyan.com?subject=EPK%20Inquiry%20-%20Deyan"
             className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-widest text-black transition hover:bg-white/90"
           >
             <Mail className="h-4 w-4" />
-            Email realdeyan@gmail.com
+            Email music@realdeyan.com
           </a>
           <a
             href="/images/ssyss-cover.jpg"

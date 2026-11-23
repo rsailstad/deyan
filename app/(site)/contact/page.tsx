@@ -57,7 +57,7 @@ export default function ContactPage() {
               Direct Inbox
             </p>
             <h2 className="mt-1 text-2xl sm:text-3xl font-bold text-white">
-              realdeyan@gmail.com
+              music@realdeyan.com
             </h2>
             <p className="mt-1 text-sm text-fg-muted">
               Managed inbox • Typical response time: within 24 hours
@@ -65,7 +65,7 @@ export default function ContactPage() {
           </div>
 
           <Link
-            href="mailto:realdeyan@gmail.com"
+            href="mailto:music@realdeyan.com"
             className="inline-flex items-center justify-center gap-2.5 rounded-full bg-[var(--accent-green)] hover:bg-[#c2ff57] px-7 py-3.5 text-sm font-bold text-black transition hover:scale-105 active:scale-95 shadow-lg shrink-0"
           >
             <Mail className="h-4 w-4 text-black" />
@@ -83,7 +83,7 @@ export default function ContactPage() {
             {inquiryCategories.map((cat) => (
               <Link
                 key={cat.title}
-                href={`mailto:realdeyan@gmail.com?subject=${encodeURIComponent(cat.subject)}`}
+                href={`mailto:music@realdeyan.com?subject=${encodeURIComponent(cat.subject)}`}
                 className="group flex flex-col justify-between rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:border-white/25 hover:bg-white/10"
               >
                 <div>

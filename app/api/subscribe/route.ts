@@ -24,7 +24,7 @@ export async function POST(request: Request) {
       name: name || "",
       message: message || "",
       timestamp: new Date().toISOString(),
-      notify: ["realdeyan@gmail.com", "rsailstad@gmail.com", "ancasailstad@yahoo.com"],
+      notify: ["music@realdeyan.com", "rsailstad@gmail.com", "ancasailstad@yahoo.com"],
     };
 
     // Google Apps Script webhooks return 302 redirects.

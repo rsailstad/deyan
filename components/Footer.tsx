@@ -23,8 +23,8 @@ export function Footer() {
           <div className="flex flex-wrap gap-4">
             <Link href="/about" className="hover:text-fg">About</Link>
             <Link href="/contact" className="hover:text-fg">Contact</Link>
-            <a href="mailto:realdeyan@gmail.com" className="hover:text-fg">
-              realdeyan@gmail.com
+            <a href="mailto:music@realdeyan.com" className="hover:text-fg">
+              music@realdeyan.com
             </a>
             <a href="https://vercel.com" target="_blank" rel="noreferrer" className="hover:text-fg">
               Built for Vercel

@@ -65,7 +65,7 @@ export function ContactForm() {
         const body = encodeURIComponent(
           `Name: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
         );
-        window.location.href = `mailto:realdeyan@gmail.com?cc=${cc}&subject=${subject}&body=${body}`;
+        window.location.href = `mailto:music@realdeyan.com?cc=${cc}&subject=${subject}&body=${body}`;
       }
     } catch {
       const cc = encodeURIComponent("rsailstad@gmail.com,ancasailstad@yahoo.com");
@@ -73,7 +73,7 @@ export function ContactForm() {
       const body = encodeURIComponent(
         `Name: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
       );
-      window.location.href = `mailto:realdeyan@gmail.com?cc=${cc}&subject=${subject}&body=${body}`;
+      window.location.href = `mailto:music@realdeyan.com?cc=${cc}&subject=${subject}&body=${body}`;
     } finally {
       setLoading(false);
     }
@@ -135,16 +135,16 @@ export function ContactForm() {
       <div className="mt-6 rounded-3xl border border-white/10 bg-[#0b0b12]/70 p-4 text-sm text-fg-muted">
         Prefer email? {" "}
         <a
-          href="mailto:realdeyan@gmail.com"
+          href="mailto:music@realdeyan.com"
           className="font-semibold text-[var(--accent-green)] hover:text-white"
           onClick={() =>
-            trackOutbound("email_click", "mailto:realdeyan@gmail.com", {
+            trackOutbound("email_click", "mailto:music@realdeyan.com", {
               platform: "other",
               context: "contact-mailto",
             })
           }
         >
-          realdeyan@gmail.com
+          music@realdeyan.com
         </a>
       </div>
     </Form>
