@@ -1,5 +1,19 @@
 [
   {
+    "title": "Role Model",
+    "cover": "/images/ssyss-cover.jpg",
+    "spotifyUrl": "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56",
+    "youtubeUrl": "https://youtube.com/shorts/2oA2GrWq_dk",
+    "appleUrl": "",
+    "releaseDate": "2026-11-23",
+    "tags": [
+      "single",
+      "ssyss",
+      "video",
+      "latest"
+    ]
+  },
+  {
     "title": "Seven Seas You Should Swim (SSYSS)",
     "cover": "/images/ssyss-cover.jpg",
     "spotifyUrl": "https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56",
