@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk, MedievalSharp } from "next/font/google";
 import "sonner/dist/styles.css";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
+import { MetaPixel } from "@/components/MetaPixel";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -90,6 +91,7 @@ export default function RootLayout({
           medieval.variable,
         )}
       >
+        <MetaPixel />
         {children}
       </body>
     </html>

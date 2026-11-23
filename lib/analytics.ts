@@ -47,6 +47,30 @@ export function trackOutbound(eventName: string, url: string, meta: OutboundMeta
     if (typeof va === "function") {
       va({ type: "event", payload });
     }
+
+    const fbq = (window as typeof window & { fbq?: (...args: unknown[]) => void }).fbq;
+    if (typeof fbq === "function") {
+      fbq("track", "ViewContent", {
+        content_name: meta.label || eventName,
+        content_category: meta.platform,
+        content_type: "music",
+        value: url,
+      });
+
+      if (meta.platform === "spotify") {
+        fbq("trackCustom", "SpotifyClick", {
+          track: meta.label,
+          context: meta.context,
+          url,
+        });
+      } else if (meta.platform === "youtube") {
+        fbq("trackCustom", "YouTubeClick", {
+          track: meta.label,
+          context: meta.context,
+          url,
+        });
+      }
+    }
   }
 
   if (process.env.NODE_ENV === "development") {
