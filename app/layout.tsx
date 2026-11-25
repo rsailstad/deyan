@@ -4,6 +4,7 @@ import "sonner/dist/styles.css";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { MetaPixel } from "@/components/MetaPixel";
+import { Analytics } from "@vercel/analytics/react";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -93,6 +94,7 @@ export default function RootLayout({
       >
         <MetaPixel />
         {children}
+        <Analytics />
       </body>
     </html>
   );

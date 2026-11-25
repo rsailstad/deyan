@@ -19,7 +19,6 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
         spotifyUrl="https://open.spotify.com/artist/0m4xsZn25PBXtXokxXBT56"
       />
       <Footer />
-      <Analytics />
       <Toaster position="bottom-right" theme="dark" richColors closeButton />
     </div>
   );
